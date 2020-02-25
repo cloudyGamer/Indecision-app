@@ -32,7 +32,7 @@ export default class BasketProduct extends React.Component {
      //////////////////////////
       console.log("fetch executed with parameter" + data + "from within" + uniqueMessage);
       const testStr = "product/product&product_id=50";
-      return  window.fetch(`http://localhost:8888/opencart-3.0.3.1/upload/index.php?route=product/product&product_id=` + data, {
+      return  window.fetch(`https://testonly.forevermecosmetics.ie/upload/index.php?route=product/product&product_id=` + data, {
            method: 'GET', // or 'PUT' 
       }).then(response => response.json())
         .then(json =>
@@ -143,7 +143,7 @@ export default class BasketProduct extends React.Component {
             const component = <Product />
            return(
            <div className="related"  xmlns="http://www.w3.org/1999/xhtml">
-                <div className="related_image_container" onClick={()=>this.tinyProp.productClickHandler(uniqueMessage,this.props.propObj.product_id)}>{this.state.resources&&<img className={"basket_image"} src={"http://localhost:8888/opencart-3.0.3.1/upload/image/"+this.state.resources.image} ></img>}</div>
+                <div className="related_image_container" onClick={()=>this.tinyProp.productClickHandler(uniqueMessage,this.props.propObj.product_id)}>{this.state.resources&&<img className={"basket_image"} src={"https://testonly.forevermecosmetics.ie/upload/image/"+this.state.resources.image} ></img>}</div>
                 <h1 className="related_title">{this.props.propObj.name}</h1>
                 <div className="bottomShelf_relContent_rel_title" >{this.props.propObj.category}</div>
                 <div className="related_image_bottomShelf">
