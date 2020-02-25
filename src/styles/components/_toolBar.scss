@@ -1,0 +1,133 @@
+.toolBar{
+    background: $darkBlack;
+    margin: 0;
+    padding: 0.5rem 2rem 0.5rem 2rem;
+    height: auto;
+    width: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: $incrementTop;
+}
+
+
+.toolBar_container{
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 0;
+}
+
+div.toolBar img {
+    height: 2.5rem;
+    width:auto;    
+}
+.toolBarWrapper{
+  //position: fixed;
+    top: 4.6rem;
+    width: 100%;
+    position:absolute;
+    z-index: 30;
+}
+
+.toolBarWrapperScroll{
+    position: fixed;
+    top: -2.3rem;
+    width: 100%;
+    z-index:30;
+    
+}
+.toolBar_info{
+    position:relative;
+    left: 5rem;
+    top: 0.25rem;
+}
+.toolBar_basketContainer{
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    color: white;
+    font-size: 1rem;
+}
+
+.toolBar_emptyWrapper{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.toolBar_mask {
+    position: relative;
+    left: 8rem;
+    width: 4rem;
+    height:2rem;
+    background-color: black;
+    z-index: 90;
+}
+
+
+  @keyframes emptyAnimation {
+  0% {right: -4rem;}
+  50% {right: 0.5rem;}
+  100% {right: -4rem;}
+  }
+
+.toolBar_empty {
+    position: relative;
+    right: -4rem;
+    width: 4rem;
+    z-index: 80;
+}
+
+.toolBar_animation {
+    animation-name: emptyAnimation;
+    animation-duration: 1s;
+    
+}
+
+/*.toolBar_basketContainer:active .toolBar_empty{
+     position: relative;
+     right: 1rem;
+     width: 4rem;
+     z-index: 80;
+}*/
+
+.toolBar_basket{
+    position:relative;
+    z-index: 90;
+}
+.toolBar_info{
+    position:relative;
+    left: 5rem;
+    z-index: 20;
+    width: auto;
+    height: auto;
+  
+}
+@media screen and (max-width: 500px){      
+    /*mobile view*/
+    div.toolBar img {
+        height: 2.5rem;
+        width:auto;    
+    }
+    
+    .toolBarWrapper{
+  //position: fixed;
+    top: 6.85rem;
+    width: 100%;
+    position:absolute;
+}
+  .toolBar_info{
+    position:relative;
+    left: 5rem;
+    z-index: 20;
+    width: auto;
+    height: auto;
+}
+.toolBarWrapperScroll{
+    position: fixed;
+    top: 0.1rem;
+    width: 100%;
+    z-index:30;
+}
+}
+

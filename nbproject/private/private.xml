@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-private xmlns="http://www.netbeans.org/ns/project-private/1">
+    <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="121">
+        <file>
+            <url>src/components/ChildState.js</url>
+            <bookmark id="48">
+                <name/>
+                <line>42</line>
+                <key/>
+            </bookmark>
+            <bookmark id="49">
+                <name/>
+                <line>98</line>
+                <key/>
+            </bookmark>
+        </file>
+        <file>
+            <url>src/components/Toolbar.js</url>
+            <bookmark id="121">
+                <name/>
+                <line>51</line>
+                <key/>
+            </bookmark>
+            <bookmark id="120">
+                <name/>
+                <line>67</line>
+                <key/>
+            </bookmark>
+            <bookmark id="119">
+                <name/>
+                <line>116</line>
+                <key/>
+            </bookmark>
+            <bookmark id="117">
+                <name/>
+                <line>142</line>
+                <key/>
+            </bookmark>
+        </file>
+        <file>
+            <url>src/styles/components/_product.scss</url>
+            <bookmark id="113">
+                <name/>
+                <line>22</line>
+                <key/>
+            </bookmark>
+            <bookmark id="115">
+                <name/>
+                <line>429</line>
+                <key/>
+            </bookmark>
+            <bookmark id="103">
+                <name/>
+                <line>492</line>
+                <key/>
+            </bookmark>
+            <bookmark id="100">
+                <name/>
+                <line>522</line>
+                <key/>
+            </bookmark>
+            <bookmark id="97">
+                <name/>
+                <line>826</line>
+                <key/>
+            </bookmark>
+            <bookmark id="114">
+                <name/>
+                <line>826</line>
+                <key/>
+            </bookmark>
+        </file>
+        <file>
+            <url>src/components/FeaturedProduct.js</url>
+            <bookmark id="72">
+                <name/>
+                <line>35</line>
+                <key/>
+            </bookmark>
+            <bookmark id="71">
+                <name/>
+                <line>62</line>
+                <key/>
+            </bookmark>
+            <bookmark id="70">
+                <name/>
+                <line>62</line>
+                <key/>
+            </bookmark>
+            <bookmark id="87">
+                <name/>
+                <line>91</line>
+                <key/>
+            </bookmark>
+        </file>
+        <file>
+            <url>src/styles/components/_toolBar.scss</url>
+            <bookmark id="118">
+                <name/>
+                <line>51</line>
+                <key/>
+            </bookmark>
+        </file>
+        <file>
+            <url>src/components/IndecisionApp.js</url>
+            <bookmark id="68">
+                <name/>
+                <line>85</line>
+                <key/>
+            </bookmark>
+            <bookmark id="80">
+                <name/>
+                <line>452</line>
+                <key/>
+            </bookmark>
+            <bookmark id="102">
+                <name/>
+                <line>494</line>
+                <key/>
+            </bookmark>
+            <bookmark id="83">
+                <name/>
+                <line>815</line>
+                <key/>
+            </bookmark>
+        </file>
+        <file>
+            <url>src/components/Product.js</url>
+            <bookmark id="107">
+                <name/>
+                <line>0</line>
+                <key/>
+            </bookmark>
+            <bookmark id="108">
+                <name/>
+                <line>37</line>
+                <key/>
+            </bookmark>
+            <bookmark id="110">
+                <name/>
+                <line>348</line>
+                <key/>
+            </bookmark>
+            <bookmark id="109">
+                <name/>
+                <line>386</line>
+                <key/>
+            </bookmark>
+            <bookmark id="111">
+                <name/>
+                <line>487</line>
+                <key/>
+            </bookmark>
+            <bookmark id="112">
+                <name/>
+                <line>555</line>
+                <key/>
+            </bookmark>
+        </file>
+        <file>
+            <url>src/components/BasketProduct.js</url>
+            <bookmark id="77">
+                <name/>
+                <line>156</line>
+                <key/>
+            </bookmark>
+        </file>
+        <file>
+            <url>src/components/HomePage.js</url>
+            <bookmark id="45">
+                <name/>
+                <line>458</line>
+                <key/>
+            </bookmark>
+            <bookmark id="36">
+                <name/>
+                <line>947</line>
+                <key/>
+            </bookmark>
+        </file>
+    </editor-bookmarks>
+    <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
+        <group/>
+    </open-files>
+</project-private>

@@ -1,0 +1,112 @@
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+  margin: 0; 
+}
+
+.img_visible {
+opacity: 0;
+transition: opacity 0.8s ease;
+}
+
+.img_visible:hover {
+opacity: 1;
+
+}
+
+
+
+.img_invisible {
+transition: opacity 0.8s ease;
+opacity:1;
+}
+
+.img_invisible:hover {
+opacity: 0;
+}
+
+.flex_center{
+display: flex;
+justify-content: center;
+
+}
+
+.border {
+border-style: solid;
+
+border-width: 0.5rem;
+}
+
+html{
+    font-size: 62.5%
+}
+                            
+body {
+    height: 100%;
+    min-height: 100vh;
+    font-family: 'Karla',sans-serif;
+    font-size: $mediumSize;
+    //background-color: $baseColor;
+}
+
+button:disabled {
+  cursor: default;  
+}
+
+button {
+    cursor:pointer;
+}
+
+@font-face {font-family: "SackersGothicW01-Light";
+    src: url("//db.onlinewebfonts.com/t/0dabf6820744e4ed41f7ce1dd8a9e502.eot");
+    src: url("//db.onlinewebfonts.com/t/0dabf6820744e4ed41f7ce1dd8a9e502.eot?#iefix") format("embedded-opentype"),
+    url("//db.onlinewebfonts.com/t/0dabf6820744e4ed41f7ce1dd8a9e502.woff2") format("woff2"),
+    url("//db.onlinewebfonts.com/t/0dabf6820744e4ed41f7ce1dd8a9e502.woff") format("woff"),
+    url("//db.onlinewebfonts.com/t/0dabf6820744e4ed41f7ce1dd8a9e502.ttf") format("truetype"),
+    url("//db.onlinewebfonts.com/t/0dabf6820744e4ed41f7ce1dd8a9e502.svg#SackersGothicW01-Light") format("svg");
+
+    
+    
+}
+
+   @import url('https://fonts.googleapis.com/css?family=Karla');
+/*/////// universal ///////*/
+.buttonWrapper {
+display:flex;
+        justify-content: center;
+        margin: 0rem 0rem 0rem 0rem;        
+}
+.buttonText {
+font-size: $fontSizeBasketBig;
+    padding: $marginBasketNormal 10rem $marginBasketNormal 10rem;
+    border-style: solid;
+    border-width: 1rem;
+    border-color: black;
+    height:auto;
+    width: auto;
+    margin: $marginBasketNormal 0rem $marginBasketNormal 0rem;
+}
+
+.float{
+position: fixed;
+z-index: 100;
+}
+
+.appDiv{
+z-index: -10; 
+height: 100%;
+min-height: 100vh;
+width: 100%;
+overflow: scroll;
+}
+
+.dividingLine{
+border-top-style: solid;
+border-top-color: $dividingColor;
+border-width: $borderWidth;
+margin-top: 2rem;
+}
+
+.base_button{
+background-color: red;
+}

@@ -1,0 +1,69 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 14-Dec-2018, 16:12:29
+    Author     : pol
+*/
+
+
+
+.blogBrief{
+float: right;
+//background-image: url('/assets/blog_image_1.jpg'); 
+background-size: cover;
+position: relative;
+flex: 0 0 50%;
+width: auto;
+margin: 0rem 0rem 0rem 0rem;
+background-repeat:no-repeat;
+right: 0rem;
+z-index: 10;
+object-fit: cover;
+height: $blogBriefHeight;
+padding-left: 5rem;
+padding-top: 5rem;
+color: white;
+}
+
+
+
+
+.blogBriefLeft{
+float:left;
+background-image: url('/assets/blog_image_1.jpg'); 
+background-size: cover;
+position: relative;
+flex: 0 0 50%;
+width: auto;
+margin: 0rem 1rem 0rem 0rem;
+background-repeat:no-repeat;
+right: 0rem;
+z-index: 10;
+object-fit: cover;
+height: $productHeight;
+padding-left: 5rem;
+padding-top: 5rem;
+color: white;
+}
+
+.blogBrief_title{
+font-family: SackersGothicW01-Light;
+font-size: 6rem; 
+font-weight: bold;
+}
+
+.blogBrief_subtitle{
+font-size: 7rem;
+padding-top: 5rem;
+font-weight: bold;
+}
+
+.blogBrief_link{
+bottom: 5rem;
+position: absolute;
+font-size: 5rem;
+
+}

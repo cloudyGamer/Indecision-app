@@ -1,0 +1,215 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 14-Nov-2019, 12:43:16
+    Author     : pol
+*/
+.continuation{
+   z-index: 50;
+    background-color: white;
+    left: 98.5%;
+    position: relative;
+    top:13.7rem;
+    width: 2rem;
+}
+.featProd_titleHold_subtitle{
+margin: 1rem 0rem 1rem 0rem; 
+font-family : 'Karla', sans-serif; 
+font-size: 2rem;
+overflow:hidden;
+text-overflow:clip;
+height: 16rem;
+position: relative;
+bottom: 2.5rem;
+}
+.featProd_basket_container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 4rem;
+   // border-radius: 5rem;
+   // background-color: #727070;
+   // padding-left: 1rem;
+
+}
+
+.featured_clicked_basket_background{
+    background-color: black;
+    //left: -$basketImageSmallLeft;
+    //left: -4.5rem;
+    z-index: 0; 
+    position:relative;
+    //right: 0.3rem;
+    
+    border-radius: $basketImageSmallBackground;
+    height: $basketImageSmallBackground;
+    width: $basketImageSmallBackground;
+    top: -2.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.featProd_white_basket_container {
+    position:relative;
+    border-radius: $basketImageSmallBackground;
+    height: $basketImageSmallBackground;
+    width: $basketImageSmallBackground;
+    top: 2.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.featured_clicked_basket  {
+z-index : 10;
+position: relative;
+height: $basketImageSmall;
+width: $basketImageSmall; 
+//top:0.3rem;
+}
+.featured_basket {
+height: $basketImageSmall;
+width: auto;
+//padding-top:2rem;
+}
+.featProd_top {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 5rem;
+}
+
+.featProd_middle {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    
+}
+
+.featProd_bottom {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.featProd_bottom_item {
+    //width: 48%;
+    //background-color: red;
+    //padding-right: 1rem;
+}
+
+.flex_item {
+    width: 48%;
+    
+}
+
+
+
+.featProd {
+width: auto;
+//max-width: 500px;
+height: auto;
+position: relative; 
+z-index : 10;
+padding: 2rem $homepageMargin 1rem $homepageMargin;
+//background-color : green;
+display: block;
+
+
+}
+
+.featProd_sidea {
+width: 48%;
+display: flex;
+justify-content: center;
+//background-color: red;
+}
+.featProd_sideb {
+//display: inline-block;
+//background-color: blue;
+ 
+display: flex;
+justify-content:center;
+padding-top: 3rem;
+ 
+
+}
+.featProd_titleHold{
+    //width: 50%;
+    //background-color: blue;
+    
+}
+.featProd_titleHold_title{
+font-family: SackersGothicW01-Light;
+font-size: 1.8rem;  
+letter-spacing: 0.20em !important;
+height: auto;
+}
+
+
+.featProd_Image_wrapper {
+display: flexbox;
+align-items: center;
+}
+
+.featProd_Image {
+//position : absolute;
+
+}
+
+.featProd_Image_photo {
+//position : absolute;
+width: 10.5rem;
+height: 10.5rem;
+}
+
+.featProd_Image_vegan {
+position : relative;
+width: 14.5rem;
+height: 10.5rem;
+bottom: 15rem;
+right: 11rem;
+
+//right: 9rem;    
+}
+
+@media screen and (max-width: 500px){
+.continuation{
+    z-index: 50;
+    background-color: white;
+    left: 92.2%;
+    position: relative;
+    top: 7rem;
+}
+.featProd_sidea {
+width: 100%;
+display: flex;
+justify-content: center;
+//background-color: red;
+}
+
+.flex_item {
+    width: 48%;
+    
+}
+.featProd_titleHold_subtitle{
+margin: 1rem 0rem 1rem 0rem; 
+font-family : 'Karla', sans-serif; 
+font-size: 1.5rem;
+overflow:hidden;
+text-overflow:clip;
+height: 8.7rem;
+}
+/*.featProd_titleHold_subtitle:hover{
+margin: 1rem 0rem 1rem 0rem; 
+font-family : 'Karla', sans-serif; 
+font-size: 2rem;
+overflow:hidden;
+text-overflow:clip;
+height: 20rem;
+}*/
+}

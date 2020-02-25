@@ -1,0 +1,45 @@
+
+.container{
+   width: auto;
+    margin: 0;
+    padding: 0;
+    
+    
+}
+
+.container_bigImageMargin {
+    
+    height: 90rem;
+    background-color: $divColor;
+    margin-bottom: 2rem;
+    padding-bottom: 0rem;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+   
+}
+
+/*.container_bigImageMarginAndPadding {
+   background-color: $divColor;
+   margin-bottom: 0rem;
+   margin: 0rem $homepageMargin $homepageMargin $homepageMargin;
+}*/
+
+.container_bigImageMarginAndPadding {
+  height: 50%;
+  background-color: $divColor;
+  margin-bottom: 0rem;
+  margin: 0rem $homepageMargin $homepageMargin $homepageMargin;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+
+.sectionContainer{
+    width: auto;
+    padding-top:$sectionBreak;
+    padding-bottom:$sectionBreak;
+ 
+}

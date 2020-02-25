@@ -1,0 +1,857 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 05-Feb-2019, 14:57:39
+    Author     : pol
+*/
+
+
+/* universal */
+.rel_wrapper{
+width: auto;
+height: auto;
+position: relative;
+display: block;
+top: 0rem;
+}
+
+.whiteBackground{
+background-color: white;    
+}
+.titleHolder {
+display:flex;
+justify-content:space-between;
+
+//background-color: red;
+
+}
+.titleHolder_sec {
+display:flex;
+justify-content:space-between;
+z-index:$incrementTop;
+//background-color: red;
+
+}
+.sectionHeading{
+    display:flex;
+    justify-content: space-between;
+    background-color: white;
+    z-index: $incrementTop;
+}
+
+.sectionHeading_rel {
+    display:flex;
+    justify-content: space-between;
+    background-color: white;
+    z-index: $incrementTop;
+}
+
+.sectionHeading_Ing {
+    display:flex;
+    justify-content: space-between;
+    background-color: white;
+    z-index: $incrementTop;
+    margin-bottom: 1rem;
+}
+
+.collapsed {
+    top: -90rem;
+    margin-bottom: -82.5rem;
+    transition: top 0.8s ease;
+    
+}
+
+.sectionHeading:hover + .collapsed {
+    top: 0rem;
+    margin-bottom: 4rem;
+    
+}
+
+.uncollapsed {
+    top:0; 
+    margin-bottom: 4rem;
+    transition: top 0.8s ease;
+}
+
+.sectionHeading:hover + .uncollapsed {
+    top: -90rem;
+    margin-bottom: -82.5rem;
+    
+}
+
+.collapsedIng {
+    top: -90rem;
+    margin-bottom: -45rem;
+    transition: top 0.8s ease;
+    
+}
+
+.sectionHeading:hover + .collapsedIng {
+    top: 0rem;
+    margin-bottom: 2rem;
+    
+}
+
+.uncollapsedIng {
+    top:0; 
+    margin-bottom: 3rem;
+    transition: top 0.8s ease;
+}
+
+.sectionHeading_Ing:hover + .uncollapsedIng {
+    top: -90rem;
+    margin-bottom: -45rem;
+}
+
+.sectionHeading_Ing:hover + .collapsedIng {
+    top: 0rem;
+    margin-bottom: 4rem;
+    
+}
+
+.uncollapsedRel {
+    top:0rem; 
+    margin-bottom: 4rem;    
+    transition: top 0.8s ease;
+}
+
+.collapsedRel {
+    top: -95rem;
+    margin-bottom: -44.5rem;
+    transition: top 0.8s ease;
+    
+}
+
+.sectionHeading_rel:hover + .collapsedRel {
+    top: 0rem;
+    margin-bottom: 2rem;
+    
+}
+
+.uncollapsedRel {
+    top:0rem; 
+    margin-bottom: 4rem;    
+    transition: top 0.8s ease;
+}
+
+.sectionHeading_rel:hover + .uncollapsedRel {
+    top: -90rem;
+    margin-bottom: -45rem;
+    
+}
+.titleHolder_title {
+//background-color: green;
+}
+
+.titleHolder_arrow {
+//background-color: green;
+width: 3rem;
+height: 3rem;
+
+}
+
+.rotated {
+transition: transform 0.8s ease;
+transform: rotate(180deg);
+}
+
+.unrotated {
+transition: transform 0.8s ease;
+transform: rotate(0deg);
+}
+
+.sectionHeading:hover .unrotated {
+//background-color: green;
+transform: rotate(180deg);
+}
+
+.sectionHeading:hover .rotated {
+//background-color: green;
+transform: rotate(0deg);
+}
+
+.sectionHeading_rel:hover .unrotated {
+//background-color: green;
+transform: rotate(180deg);
+}
+
+.sectionHeading_rel:hover .rotated {
+//background-color: green;
+transform: rotate(0deg);
+}
+.sectionHeading_Ing:hover .unrotated {
+//background-color: green;
+transform: rotate(180deg);
+}
+
+.sectionHeading_Ing:hover .rotated {
+//background-color: green;
+transform: rotate(0deg);
+}
+
+.inline {
+display: inline;
+color: blue;
+}
+
+.centeredText{
+text-align: center;
+
+font-size: 10px;
+}
+
+.posAbs {
+/*background-color: blueviolet;*/
+}
+
+
+
+.greyBorder {
+border-bottom-style: solid;
+border-bottom-color: $borderBottomColor;
+border-width: $borderWidth;
+}
+
+.titleFont {
+font-family: 'Karla', sans-serif;
+font-size: $contentTitleFont;
+}
+/***********************/
+
+
+.topShelf {
+width: auto;
+//max-width: 500px;
+height: 250px;
+position: relative; 
+z-index : 10+$incrementTop;
+display:flex;
+padding: 2rem $homepageMargin 1rem $homepageMargin;
+background-color : $baseColor;
+justify-content: space-between;
+
+
+}
+
+.topShelf_sidea {
+//display: inline-block;  
+//background-color: blue;
+}
+.topShelf_sideb {
+//display: inline-block;
+//background-color: blue;
+padding-left: 0rem; 
+display: flex;
+justify-content:center;
+padding-top: 3rem;
+margin-left: 5rem;  
+
+}
+.topShelf_titleHold{}
+.topShelf_titleHold_title{
+font-family: SackersGothicW01-Light;
+font-size: $ProductTextMedium;  
+letter-spacing: 0.20em !important;
+}
+
+.topShelf_category_titleHold_title{
+font-family: SackersGothicW01-Light;
+font-size: $ProductTextMedium;  
+letter-spacing: 0.20em !important;
+}
+
+.topShelf_titleHold_subtitle{
+margin: 1rem 0rem 1rem 0rem; 
+font-family : 'Karla', sans-serif; 
+font-size: 2rem;
+}
+
+.topShelf_Image_wrapper {
+display: flexbox;
+align-items: center;
+}
+
+.topShelf_Image {
+//position : absolute;
+
+}
+
+.topShelf_Image_photo {
+//position : absolute;
+width: 20.5rem;
+height: 20.5rem;
+}
+
+.topShelf_Image_vegan {
+position : relative;
+width: 14.5rem;
+height: 10.5rem;
+bottom: 15rem;
+right: 11rem;
+
+//right: 9rem;    
+}
+
+.topShelf_starRating {
+position: absolute;
+bottom: 1rem;
+}
+
+.topShelf_starRating_stars {
+display: inline-block;
+}
+
+.topShelf_starRating_text {
+display: inline-block;
+}
+
+
+.midShelf {
+//max-width: 500px;
+width: auto;
+height: 200px;
+position: relative; 
+z-index : 10+$incrementTop;
+display:block;
+padding: 0px $homepageMargin 0px $homepageMargin;
+background-color : $product_midshelf_color;      
+}
+/***********************/
+        .midShelf_pricebarcontainer {
+        display:flex; 
+        padding-top: 2rem;
+        height: $testHeight;
+        justify-content : space-between;
+        margin-bottom : 3rem;
+        }
+
+            .midShelf_priceBar {
+            //display:inline-block;
+            width: 26rem;
+            height: $testHeight;
+            //background-color: red;
+            font-size: 1.5rem;    
+            border-style: solid;
+            border-width: 0.1rem;
+            border-color: #808080;
+            line-height: 3rem;
+            padding-left: 1rem;
+            color: white;
+
+            }
+
+            .midShelf_quantity{
+            //display:inline-block;
+            font-size: 2rem;
+            padding: 0;
+            margin: 0;
+            height: 2.8rem;
+            width : 2.8rem;
+            //width: $testHeight;
+            //height: $testHeight;
+            //background-color: white;
+            //border-style: solid;
+            //border-width: 0.1rem;
+            //border-color: white;
+            //vertical-align:top;
+
+        }
+        
+        .midShelf_quantity_input{
+        height : $testHeight;   
+        }
+
+.midShelf_wishListandBasketcontainer{
+display: flex;
+height: 6rem;
+width: 100%;
+//background-color: green;
+justify-content:space-between;
+
+}
+
+    .midShelf_wishListcontainer{
+    display: flex;
+    justify-content:space-evenly;
+    height: 30px;
+    width: 100px;
+    //background-color: red;
+    align-items:flex-start;
+    }
+
+        .midShelf_wishList_icon {
+        //display: flex;
+        //justify-content:space-evenly;
+        width: 20px;
+        height: 20px;
+        //background-color: blue;
+        }
+
+        .midShelf_wishList_text {
+        //display: flex;
+        //justify-content:space-evenly;
+        width: 20px;
+        height: 20px;
+        //background-color: blueviolet;    
+        }
+
+
+
+    .midShelf_Basketcontainer {
+    display: flex;
+    justify-content:space-between;
+    width: 40rem;
+    height: auto;
+    //background-color: red;
+    align-items:center;
+    border-style: solid;
+    border-color: white;
+    border-width: 0.5rem;
+    color: white;
+    //text-align: center;
+    font-family : "karla" , sans-serif;
+    font-weight: bold;
+    padding: 1rem 2rem 1rem 2rem;
+    background-color:black;
+    transition: 
+        background-color 1s ease, 
+        border-color 1s ease,
+        color 1s ease;
+   
+ 
+   
+    }
+    
+    .midShelf_Basketcontainer:hover {
+    display: flex;
+    justify-content:space-between;
+    width: 40rem;
+    height: auto;
+    background-color: white;
+    align-items:center;
+    border-style: solid;
+    border-color: grey;
+    border-width: 0.5rem;
+    color: Black;
+    //text-align: center;
+    font-family : "karla" , sans-serif;
+    font-weight: bold;
+    padding: 1rem 2rem 1rem 2rem;
+    }
+    
+    .midShelf_Basketcontainer_clicked {
+    display: flex;
+    justify-content:space-between;
+    width: 40rem;
+    height: auto;
+    background-color: white;
+    align-items:center;
+    border-style: solid;
+    border-color: grey;
+    border-width: 0.5rem;
+    color: Black;
+    //text-align: center;
+    font-family : "karla" , sans-serif;
+    font-weight: bold;
+    padding: 1rem 2rem 1rem 2rem;
+    transition: 
+        background-color 1s ease, 
+        border-color 1s ease,
+        color 1s ease;
+   
+    }
+    
+    .midShelf_Basketcontainer_clicked:hover {
+    display: flex;
+    justify-content:space-between;
+    width: 40rem;
+    height: auto;
+    background-color: black;
+    align-items:center;
+    border-style: solid;
+    border-color: white;
+    border-width: 0.5rem;
+    color: Black;
+    //text-align: center;
+    font-family : "karla" , sans-serif;
+    font-weight: bold;
+    padding: 1rem 2rem 1rem 2rem;
+   
+    }
+    
+        .midshelf_addToCart{
+        width: auto;
+        
+        }
+    
+        .midShelf_Basket_secondary_container{
+        display:flex;
+        //justify-content: flex-start; 
+        width: 25rem;
+        background-color: blue;
+        align-items: center;
+        }
+
+        .midShelf_Baskettext {
+        width: 20px;
+        height: 20px;
+        background-color: white;             
+        }
+        
+        .midShelf_Basketicon{
+        //background-color: white;
+      
+        //margin-right: 14rem;
+        
+        
+        }
+        .midShelf_Basketicon_clicked {
+        opacity: 0;
+        transition: opacity 0.8s ease;
+        position: relative;
+        z-index: 10;
+        right: 9rem;
+        //background-color: green;
+        }
+        
+        .midShelf_Basketicon_clicked:hover{
+        opacity: 1;
+        position: relative;
+        z-index: 10;
+        right: 9rem;
+        //background-color: green;
+        }
+        
+        .midShelf_Basketicon_clicked > img {
+        width: 30px;
+        height: 30px;
+        
+        
+        }
+        .midShelf_Basketicon > img {
+        width: 30px;
+        height: 30px;
+        
+        
+        }
+
+
+/***********************/
+.bottomShelf_greyWrapper{
+background-color: $product_bottomshelf_color; 
+padding: 1rem 3rem 2rem;
+z-index: $incrementTop;
+}
+.bottomShelf_socMedButton {
+display: flex;
+justify-content:space-evenly;
+//background-color: green;
+width: 100%;
+height: $bottomShelf_socMedButton_Height;
+align-items:center;
+margin-bottom: 2rem;
+}
+.bottomShelf_socMedButton_but1 {
+height:$bottomShelf_socMedButton_Height;
+width:$bottomShelf_socMedButton_but_Height;
+background-color:$bottomShelf_socMedButton_but_color;
+}
+.bottomShelf_socMedButton_but2 {
+    height:$bottomShelf_socMedButton_Height;
+width:$bottomShelf_socMedButton_but_Height;
+background-color:$bottomShelf_socMedButton_but_color;
+}
+.bottomShelf_socMedButton_but3 {
+    height:$bottomShelf_socMedButton_Height;
+width:$bottomShelf_socMedButton_but_Height;
+background-color:$bottomShelf_socMedButton_but_color;
+}
+.bottomShelf_review{
+margin-bottom: 3rem;    
+}
+.bottomShelf_review_heading {
+display: flex;
+//background-color: green;
+justify-content : center;
+width: 100%;
+height:50px;
+align-items:center;
+
+}
+.bottomShelf_review_icon{
+width: 50px;
+height: 40px;
+//background-color: red;
+margin-right:6px;
+}
+.bottomShelf_review_link{
+width: auto;
+height: auto;
+//background-color: red;
+margin-left:6px;
+font-size : 3rem;
+margin-bottom: 2rem;
+font-weight: 2000;
+}
+.bottomShelf_review_text{
+font-size: 20px;
+width: 100%;
+height: auto;
+font-family: karla, sans-serif;
+text-align:  justify; 
+
+}
+.shelf_title {
+font-weight: bold;
+font-size: 2.5rem;
+padding-bottom: 1rem;
+}
+
+
+.bottomShelf_rel {
+
+}
+.bottomShelf_rel_title {
+
+}
+.bottomShelf_rel_arrow {}
+
+/*.bottomShelf_rel_bigImage{
+padding: 0rem 2rem 0rem 2rem;
+width: auto;
+height: 50rem;
+//background-color: red;
+display: flex;
+align-items:center;
+flex-direction: column;
+justify-content: space-around;
+object-fit: cover;
+background-image: url('/assets/relatedArticles/shea_butter_article.jpg');
+}*/
+
+.bottomShelf_rel_bigImage img {
+object-fit: cover;
+height: auto;
+width : auto;
+position: absolute;
+z-index: -10;
+}
+
+.bottomShelf_rel_bigImage_title{
+//background-color: greenyellow;
+text-align: center;
+font-size : 6rem;
+color: #eed1c1;
+font-weight : bolder;
+height: 20rem;
+width: 55rem;
+}
+.bottomShelf_rel_bigImage_button{
+height: 10rem;
+width : 40rem;
+text-align: center;
+font-size: 2rem;
+line-height:4.5rem;
+//background-color: greenyellow;
+border-color: $salmonPink;
+color: $salmonBrown;
+transition: border-color 0.5s ease;
+}
+
+.bottomShelf_rel_bigImage_button:hover {
+ border-color: $salmonBrown;
+}
+
+
+.bottomShelf_rel_bigImage_button_text{
+text-align: center;
+//background-color: blue;
+font-size: 5rem;
+line-height: 10rem;
+}
+
+.bottomShelf_reviews {}
+.bottomShelf_reviews_avgRating {
+display:block;
+width: auto;
+background-color: blue;
+height: auto;
+color: $salmonPink;
+
+}
+.bottomShelf_reviews_avgRating_stars {
+display: block; 
+font-size: 5rem;
+}
+.bottomShelf_reviews_avgRating_number {
+display: inline-block;
+font-size: 5rem;       
+}
+.bottomShelf_reviews_avgRating_subtitle {
+display: inline-block;
+font-size: 2rem;
+}
+
+.bottomShelf_reviews_singReview {
+display: block;
+
+}
+.bottomShelf_reviews_singReview_title {
+display: block;
+}
+.bottomShelf_reviews_singReview_subTitle {
+display: block;
+}
+.bottomShelf_reviews_singReview_picture {
+display: inline-block;
+}
+.bottomShelf_reviews_singReview_userName {
+display: inline-block;          
+}
+.bottomShelf_reviews_singReview_stars {
+ display: block;
+}
+
+.bottomShelf_reviews_singReview_text {
+display: block;
+height: auto;
+width: auto;
+
+
+}
+
+.bottomShelf_relContent {
+display: flex;
+flex-wrap : wrap;
+justify-content: space-around;
+//background-color: blue;
+padding: 2rem $homepageMargin 1rem $homepageMargin;
+}
+
+.bottomShelf_relContent_component  img{
+height: 40rem;
+width: 40rem;
+
+}
+
+.bottomShelf_relContent_component{
+font-size: 5rem;
+width: 40rem;
+}
+
+.test{
+ background-color: red;
+ height: 100px;
+ width: 100px;
+}
+
+/**************************** mobile view */
+@media screen and (max-width: 500px){
+    .topShelf {
+    width: auto;
+    //max-width: 500px;
+    height: auto;
+    position: relative; 
+    z-index : 80;
+    //display:flex;
+    padding: 2rem $homepageMargin 1rem $homepageMargin;
+    //background-color : green;
+    display: block;
+    //justify-content: space-between;
+    }
+
+    .topShelf_sidea{
+    width: 100%;
+
+    }
+
+    .topShelf_sideb{
+    padding-left: 0rem; 
+    display: flex;
+    justify-content:center;
+    padding-top: 3rem;
+    width: 100%;
+    }
+    
+    .bottomShelf_rel {}
+
+    /********* related */
+    .bottomShelf_rel_bigImage{
+        position: relative; 
+        padding: 2rem 2rem 0rem 2rem;
+        width: auto;
+        height: 30rem;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: space-around;
+        object-fit: scale-down;
+        background-size: cover;
+        background-image: url(/assets/relatedArticles/shea_butter_article.jpg);
+        z-index:-80;
+    }
+
+    .bottomShelf_rel_bigImage_title{
+        text-align: center;
+        font-size: 2.5rem;
+        color: #54382d;
+        font-weight: bolder;
+        height: 20rem;
+        width: 30rem;
+    }
+
+    .bottomShelf_rel_bigImage_button {
+        height: 5rem;
+        width: 20rem;
+        text-align: center;
+        font-size: 2rem;
+        line-height: 4.5rem;
+        border-color: #eed1c1;
+        color: #b9896e;
+        transition: border-color 0.5s ease;
+    }
+
+    .bottomShelf_rel_bigImage_button_text{
+        text-align: center;
+        font-size: 2.5rem;
+        line-height: 5rem;
+    }
+/******** related */
+}
+/*********************** end  */
+
+.bottomShelf_relContent_rel {
+ 
+ 
+}
+.bottomShelf_relContent_rel_picHolder {}
+.bottomShelf_relContent_rel_picHolder_pic {}
+.bottomShelf_relContent_rel_picHolder_symbol {}
+
+.bottomShelf_relContent_rel_title {
+font-weight: 900;
+margin-bottom: 0.5rem;
+}
+.bottomShelf_relContent_rel_subtitle {}
+.bottomShelf_relContent_rel_price {}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,77 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 14-Nov-2019, 12:43:16
+    Author     : pol
+*/
+
+.featProd {
+width: auto;
+//max-width: 500px;
+height: auto;
+position: relative; 
+z-index : 10;
+padding: 2rem $homepageMargin 1rem $homepageMargin;
+//background-color : green;
+display: block;
+
+
+}
+
+.featProd_sidea {
+width: 100%;
+display: flex;
+justify-content: center;
+//background-color: red;
+}
+.featProd_sideb {
+//display: inline-block;
+//background-color: blue;
+padding-left: 0rem; 
+display: flex;
+justify-content:center;
+padding-top: 3rem;
+ 
+
+}
+.featProd_titleHold{}
+.featProd_titleHold_title{
+font-family: SackersGothicW01-Light;
+font-size: 2rem;  
+letter-spacing: 0.20em !important;
+min-height: 15rem;
+}
+
+.featProd_titleHold_subtitle{
+margin: 1rem 0rem 1rem 0rem; 
+font-family : 'Karla', sans-serif;  
+}
+
+.featProd_Image_wrapper {
+display: flexbox;
+align-items: center;
+}
+
+.featProd_Image {
+//position : absolute;
+
+}
+
+.featProd_Image_photo {
+//position : absolute;
+width: 10.5rem;
+height: 10.5rem;
+}
+
+.featProd_Image_vegan {
+position : relative;
+width: 14.5rem;
+height: 10.5rem;
+bottom: 15rem;
+right: 11rem;
+
+//right: 9rem;    
+}

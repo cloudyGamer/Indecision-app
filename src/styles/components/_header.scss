@@ -1,0 +1,39 @@
+.header{
+    background:$darkBlack;
+    color: white;
+    //margin-bottom: $xLargeSize;
+    padding: $mediumSize 0;
+    border-bottom-style: solid;
+    border-bottom-color: $ProductReviewColor;
+    border-width: 0.1rem;
+    position: relative;
+    top: 0;
+    width: 100%;
+    box-sizing: border-box;
+    z-index: $incrementTop;
+}
+
+.header__title {
+    font-size: $largeSize;
+    font-family: SackersGothicW01-Light;
+    margin: 0;
+    text-align: center; 
+}
+
+.header__subtitle {
+    color: $offWhite;
+    font-size: $mediumSize;
+    font-weight: 500;
+    margin: 0;
+}
+
+.testing_mode{
+    width: auto;
+    height: 2.5rem;
+    background-color: black;
+    color: white;
+    font-size: 1.5rem;
+    font-family: SackersGothicW01-Light;
+    margin: 0;
+    text-align: center; 
+}

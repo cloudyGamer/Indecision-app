@@ -1,0 +1,112 @@
+.rel_bigImage{
+padding: 2rem 2rem 0rem 2rem;
+width: auto;
+height: 30rem;
+//background-color: red;
+display: flex;
+align-items:center;
+flex-direction: column;
+justify-content: space-around;
+object-fit: scale-down;
+background-size: cover;
+margin-bottom: 1rem;
+//background-image: url('/assets/relatedArticles/shea_butter_article.jpg');
+}
+
+.shea_butter{
+background-image: url('/assets/relatedArticles/shea_butter_article.jpg');
+}
+
+.aromatherapy{
+background-image: url('/assets/relatedArticles/aromatherapy.jpg');
+}
+
+.bombCosmetics{
+background-image: url('/assets/relatedArticles/bomb_cosmetics.jpg');    
+}
+
+.rel_bigImage img {
+object-fit: cover;
+height: auto;
+width : auto;
+position: absolute;
+z-index: -10;
+}
+
+.span_shea_butter {
+background-color: #f5f5f5;
+}
+.span_aromatherapy {
+background-color: #9a97aa;    
+}
+.span_bombCosmetics {
+background-color: #aa2a39;    
+}
+
+.rel_bigImage_title{
+text-align: center;
+font-size : 3.5rem;
+font-weight : bolder;
+height: 30rem;
+width: 50rem;
+}
+
+.title_shea_butter {
+color: #54382d;
+}
+.title_aromatherapy {
+color: #6a3f01;    
+}
+.title_bombCosmetics {
+color: #ebc0cc;    
+}
+
+.rel_bigImage_button{
+height: 5rem;
+width : 20rem;
+text-align: center;
+font-size: 2rem;
+line-height:4.5rem;
+//background-color: greenyellow;
+transition: border-color 0.5s ease;
+}
+
+.button_shea_butter{
+border-color: $salmonPink;
+color: $salmonBrown;
+}
+.button_aromatherapy {
+border-color: #c27f02;
+color: #d25c09;
+}
+.button_bombCosmetics {
+border-color: #9a5781;;
+color: #9a5781;
+}
+.button_aromatherapy:hover {
+border-color: #d25c09;
+}
+.button_shea_butter:hover {
+ border-color: $salmonBrown;
+}
+.button_bombCosmetics:hover {
+ border-color: #9a5781;
+}
+
+.rel_bigImage_button_text{
+text-align: center;
+//background-color: blue;
+font-size: 2.5rem;
+line-height: 5rem;
+}
+
+@media screen and (max-width: 500px){
+.rel_bigImage_title{
+text-align: center;
+font-size : 2.5rem;
+font-weight : bolder;
+height: 20rem;
+width: 30rem;
+}    
+    
+}

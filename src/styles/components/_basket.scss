@@ -1,0 +1,199 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 19-Feb-2019, 11:23:47
+    Author     : pol
+*/
+/*/////////////// universal*/
+.basket_quantity{
+    background-color: #727070;
+    color: white;
+    position: relative;
+    border-radius: 0rem 3.5rem 3.5rem 0rem ;
+    height: 3.5rem;
+    width: 3.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    right: 0.4rem;
+    font-weight: bold;
+}
+.basket_remove_x {
+    position: relative;
+    height: 4rem;
+    width: auto;
+    z-index: 0;
+    top: 0.2rem;
+    right: 0.7rem;
+}
+
+.basket_container{
+    display: flex;
+    justify-content: center;
+    background-color: black;
+    margin: 1.5rem -$homepageMargin 0rem -$homepageMargin;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+     
+    
+} 
+
+.basket_checkoutButton{
+    display: flex;
+    justify-content:center;
+    width: 15rem;
+    
+    height: auto;
+    align-items:center;
+    background-color: black;
+    border-style: solid;
+    border-color: white;
+    border-width: 0.5rem;
+    color: white;
+    font-family : "karla" , sans-serif;
+    font-weight: bold;
+    font-size: 2.5rem;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+    
+}
+
+.basket_title {
+    color: black;
+    font-family: SackersGothicW01-Light;
+    font-size: 3rem;
+    letter-spacing: 0.20em !important;
+}
+
+.basket_image {
+    height: 22.8rem;
+    width: 22.8rem;
+}
+
+.bottomBorder{
+border-bottom-style: solid;
+        border-width: $borderWidth;
+        border-color: $borderBottomColor;
+        background-color: blue;
+}
+/*////////////////////////////////////*/
+.masterDivBasket{
+padding: 10rem $homepageMargin 0rem $homepageMargin;    
+}
+
+.basket_emptyBasket{
+font-family: SackersGothicW01-Light;
+font-size: 1rem;
+letter-spacing: 0.20em !important;
+}
+
+.topShelfBasket{
+background-color: red;
+
+}
+
+
+.topShelfBasket_title{
+font-size: $fontSizeBasketLarge;
+text-align: center;
+padding-bottom: 10rem;
+    }
+
+  
+.midShelfBasket {
+margin-bottom: $marginBasketBig;    
+}
+
+   
+    .midShelfBasket_imageTextWrapper{
+    margin-bottom : $marginBasketBig;
+    } 
+        .midShelfBasket_image {
+        display: inline-block;
+        height: $basketImage;
+        width: $basketImage;
+        }
+
+        .midShelfBasket_wrapper {
+        display: inline-block;  
+        background-color: red;  
+
+        }
+
+            .midshelfBasket_wrapper_title {
+            font-size: $fontSizeBasketBig;
+            padding-bottom: 3rem;
+            //background-color: green; 
+            //border-bottom-style: solid;
+            //border-width: $borderWidth;
+            //border-color: $borderBottomColor
+            }
+
+            .midshelfBasket_wrapper_price {
+            font-size: $fontSizeBasketMedium;
+            background-color: green;  
+
+            }
+
+    .midShelfBasket_subTotal_wrapper{
+    display:flex;
+    justify-content: center;    
+    }
+        
+        .midShelfBasket_subTotal {
+        font-size: $fontSizeBasketMedium;
+        color: $borderBottomColor;
+        }
+
+        .midShelfBasket_checkOutBut {
+        display:flex;
+        justify-content: center;
+        margin: 0rem 0rem 0rem 0rem;
+
+        }
+    
+    
+    
+        .midShelfBasket_checkOutBut_text {
+    font-size: $fontSizeBasketBig;
+    padding: $marginBasketNormal 10rem $marginBasketNormal 10rem;
+    border-style: solid;
+    border-width: 1rem;
+    border-color: black;
+    height:auto;
+    width: auto;
+    margin: $marginBasketNormal 0rem $marginBasketNormal 0rem;
+        }
+    .midshelfBasket_viewBasket_wrapper {
+    display: flex;
+    justify-content: center;
+    }
+        .midShelfBasket_viewBasket{
+        font-size: $fontSizeBasketBig;
+        margin-bottom: $marginBasketNormal;
+        }   
+        
+    .midShelfBasket_navWrapper {
+    font-size: $fontSizeBasketMedium; 
+    display: flex;
+    justify-content: space-around;
+    }
+    
+        .midShelfBasket_navWrapper_link1 {
+
+        }
+
+        .midShelfBasket_navWrapper_link2 {
+
+        }
+       
+.bottomShelfBasket {
+            
+ }
+ 
+     .bottomShelfBasket_continue {
+      font-size: $fontSizeBasketLarge;
+     }

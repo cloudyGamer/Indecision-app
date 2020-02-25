@@ -1,0 +1,114 @@
+$featFlexWidth : 49%;
+
+//Z-Index
+$incrementTop: 60;
+$incrementBottom : -20;
+
+//colors
+$baseColor: white;
+$divColor:#000000;
+$darkBlack: #000000;
+$offBlack: #20222b; 
+$offWhite: #a5afd7;
+$darkBlue: #333745;
+$brightPurp :#8357c5;
+$blue: #3c4251;
+$lightBlue: #464b5e;
+$lightBlack:#888888;
+$naturalIngredient: #36924c;
+$salmonPink: #eed1c1;
+$salmonBrown: #b9896e;
+$dividingColor: grey;
+
+//spacing
+$mediumSize: 1.6rem;
+$largeSize: 3.2rem;
+$xLargeSize: 4.8rem;
+$smallSize: 1.2rem;
+
+//banner spacing
+$mediumSizeHeight: 1.6rem;
+$mediumSizeWidth: 1.6rem;
+$largeSizeHeight: 3.2rem;
+$largeSizeWidth: 3.2rem;
+$xLargeSizeHeight: 4.8rem;
+$xLargeSizeWidth: 4.8rem;
+$smallSizeHeight: 1.2rem;
+$smallSizeWidth: 1.2rem;
+
+//logo size
+$logoSizeSmall: 1.6 rem; 
+
+//my new sizes
+// home page 
+$productHeight : 80rem;
+$blogBriefHeight : 75rem;
+$homepageMargin : 1.5rem;
+$homepageInnerMargin : $homepageMargin/2;
+$sectionBreak : 7rem;
+// basket image
+$basketImageSmall : 3rem;   
+$basketImageSmallBackground : 5rem;
+$basketImageSmallLeft : $basketImageSmall/6;
+
+
+
+       //Briefproduct
+$ProductTextSmall: 1.5rem;
+$ProductTextMedium: 3rem;
+$ProductLineHeight: 1.6;
+$ProductBorderBottom: 4px solid lightgrey;
+$ProductReviewColor: lightgrey;
+
+      //review
+$arrowSize: 2.5rem;
+
+      //product
+$topShelf_subtitle_size: 2.5rem;
+$product_midshelf_color: #000000;
+$product_bottomshelf_color: #f2f2f2;
+$testHeight : 30px;
+
+$bottomShelf_socMedButton_Height : 64px;
+$bottomShelf_socMedButton_but_Height: 64px;
+$bottomShelf_socMedButton_but_color: none;
+
+$bottomShelf_Ing_feat_bottom : 35%;
+
+$borderBottomColor : grey;
+$borderWidth: 0.1rem;
+$darkerBottomColor:black;
+
+$contentTitleFont : 'Karla', sans-serif;
+$titleFontSize : 0.5rem;
+
+
+     //small product
+$divisionFactor: 2;  
+$briefProductSmall : 5rem/$divisionFactor;
+$ProductSmallTextSmall: 1.3rem;
+$ProductSmallTextMedium: 3rem/$divisionFactor;
+$ProductSmallLineHeight: 1.6/$divisionFactor;
+$ProductSmallBorderBottom: $borderWidth solid lightgrey;
+$ProductSmallReviewColor: lightgrey;
+$ProductSmallSize :20.5rem;
+
+  //added to basket
+$fontSizeBasketLarge : 8rem;
+$fontSizeBasketMedium : 4rem;
+$fontSizeBasketTitle : 2.5rem;
+$fontSizeBasketBig : 5rem;
+$marginBasketBig: 15rem;
+$marginBasketNormal : 5rem;
+$basketImage : 22.8rem;
+
+//payment Process
+$subtitleGrey: #575965;
+$h2CheckBox : 2rem;
+
+//tool bar favicon
+$menuMult : 1.2;
+$animationLength: 0.5s;
+    
+
+

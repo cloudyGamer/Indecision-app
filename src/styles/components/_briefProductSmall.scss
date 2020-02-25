@@ -1,0 +1,91 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 11-Feb-2019, 15:08:14
+    Author     : pol
+*/
+
+
+
+
+
+.briefContainer_ProductSmall{
+    width: 20.5rem;
+    height: auto;
+    background-color: red;
+    
+}
+
+    .briefContainer_ProductSmall_overlapWrapper{
+
+    display: flex;  
+    justify-content: center;
+    }
+
+            .topShelfSmall_Image {
+        position : relative;
+        height:$ProductSmallSize;
+
+        }
+        .topShelfSmall_Image_photo {
+        position : relative;
+        width: $ProductSmallSize;
+        height: $ProductSmallSize;
+        }
+        .topShelfSmall_Image_vegan {
+        position : relative;
+        width: 5.5rem;
+        height: 2.5rem;
+        right: 0rem;
+        bottom: 20rem;
+        }
+        
+        
+.briefContainer_ProductSmall_text{
+ 
+ width: auto;
+ height: auto;
+ 
+}
+
+    .briefContainer_ProductSmall_text_name{
+    display: block;
+    font-family: SackersGothicW01-Light;
+    font-size: 1rem;  
+    //letter-spacing: -0.20em !important;
+    }
+
+    .briefContainer_ProductSmall_text_type{
+    display: block;
+    font-size: $ProductSmallTextSmall;
+    //line-height: 0rem;
+    border-bottom: $ProductSmallBorderBottom;
+    color: green;
+    padding-bottom: 1rem;
+    }
+
+    .briefContainer_ProductSmall_text_desc{
+    display:block;
+    font-size: $ProductSmallTextMedium;
+    line-height: 0rem;  
+    border-bottom: $ProductSmallBorderBottom;
+    color: blue;
+    padding-bottom: 1rem;
+    }
+
+    .briefContainer_ProductSmall_text_price{
+    //background-color: blue;
+    display: inline-block;
+    font-size: $ProductSmallTextMedium;
+    line-height: 0rem; 
+    color: blue;
+    padding-bottom: 1rem;
+    }
+
+
+    .briefContainer_ProductSmall_text_measure{
+    display: inline-block;
+    }

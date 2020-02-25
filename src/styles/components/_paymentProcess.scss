@@ -1,0 +1,117 @@
+
+.continue_Button {
+    font-size: 2.5rem;
+    display: flex;
+    justify-content:space-around;
+    width: 100;
+    height: 5rem;
+    background-color: none;
+    align-items:center;
+    border-style: solid;
+    border-color: black;
+    border-width: 0.5rem;
+    color: black;
+    text-align: center;
+    font-family : "karla" , sans-serif;
+    font-weight: bold;
+    padding: 1rem 2rem 1rem 2rem;
+    border-radius: 1rem;
+    }
+    
+    .continue_Button:active {
+ border-color: white;
+ color: white;
+ background-color: black;
+ transition: background-color 0.5s ease,color 0.8s ease,border-color black 0.5s;
+}
+    
+    .blackBorder{
+        
+border-bottom-style: solid;
+border-bottom-color: $darkerBottomColor;
+border-width: $borderWidth;
+margin-bottom: 2rem;
+
+    }
+    
+    .paymentHeader_wrapper{
+     display: flex;
+     align-items: center;
+    }
+    
+    .paymentHeaders {
+        
+        font-size: 5rem;
+        text-align: left;
+        color: black;
+        font-family : "karla" , sans-serif;
+        font-weight: bold;
+    }
+    
+    
+    
+    input {
+       // background-color: red;
+        width: 100%;
+        height: 5rem;
+        margin-bottom: 10px;
+        text-align: center;
+        border-radius: 5rem;
+        
+    }
+    
+    input[type="text"] {
+    font-size:2rem;
+}
+
+form {
+    display:flex;
+    flex-direction:column;
+    //background-color: blue;
+}
+
+form input {
+    margin-bottom: 3rem;
+    color: grey;
+    
+}
+
+.checkBox {
+  display:flex;
+justify-content: flex-start; 
+width: 10rem;
+height: 5rem;
+align-items: center;
+padding-left: $h2CheckBox;
+font-size: 2rem;
+}
+
+.checkBox label {
+    margin:0.25rem;
+}
+
+h2 {
+    font-size: 2.3rem;
+    text-align: left;
+    color: $subtitleGrey;
+    font-style: oblique;
+    width: 80%;
+    margin-bottom: 2.5rem;
+    padding-left: $h2CheckBox;
+}
+
+.masterDivPaymentProcess {
+    padding: 7rem 3rem 2rem 3rem;
+}
+
+.redirectLoading{
+  text-align: centre;
+      color: grey;
+}
+
+.backButton{
+  padding-left: $h2CheckBox;  
+}
+
+
+

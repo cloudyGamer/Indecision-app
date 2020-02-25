@@ -1,0 +1,43 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 06-Feb-2019, 11:56:28
+    Author     : pol
+*/
+.masterDiv {
+top: 10.8rem;
+background-color : $baseColor;
+//max-width: 500px;
+//background-color : green;
+width: 100%;
+height: auto;
+z-index: 0;
+position: absolute;
+padding: 0px 0px 0px 0px;
+box-sizing: border-box;
+}
+
+.masterDivTestChild {
+    width:100%;
+    background-color: blue;
+    height: 20px;
+}
+
+/**************************** mobile view */
+@media screen and (max-width: 500px){
+.masterDiv {
+top: 10.8rem;
+background-color : $baseColor;
+//max-width: 500px;
+//background-color : green;
+width: 100%;
+height: auto;
+z-index: 0;
+position: absolute;
+padding: 0px $homepageMargin 0px $homepageMargin;
+box-sizing: border-box;
+}    
+}

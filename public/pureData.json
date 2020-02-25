@@ -1,0 +1,14 @@
+{
+    "product": {
+    "title": "New Bathbomb",
+    "body_html": "<strong>Good snowboard!</strong>",
+    "vendor": "Burton",
+    "product_type": "Bath Bomb",
+    "tags": "Barnes & Noble, John's Fav, \"Big Air\"",
+    "images": [
+      {
+        "src": "https://bombcosmetics.co.uk/media/catalog/product/cache/1/thumbnail/x600/040ec09b1e35df139433887a97daa66f/c/h/chill-out-blaster.png"
+      }
+    ]
+  }
+}

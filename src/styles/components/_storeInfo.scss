@@ -1,0 +1,51 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 20-Feb-2020, 16:30:14
+    Author     : pol
+*/
+
+.storeInfo{
+padding-left: 2rem;
+padding-top: 2rem;
+background-color: black;
+color: white;
+}
+.storeInfo_container {
+padding-bottom: 5rem;
+padding-left: 1rem;
+padding-right: 2rem;
+}
+.storeInfo_title {
+font-family: SackersGothicW01-Light;
+font-size: 2.5rem;
+letter-spacing: 0.20em !important;
+height: auto;   
+}
+
+.storeInfo_subtitle {
+font-family: SackersGothicW01-Light;
+font-size: 1.5rem;
+letter-spacing: 0.20em !important;
+height: auto;   
+}
+
+.storeInfo_body {
+margin: 1rem 0rem 1rem 0rem;
+font-family: 'Karla', sans-serif;
+font-size: 2rem;
+height: auto;
+position: relative;
+padding-left: 1rem;
+}
+.storeInfo_email{
+font-size: 2rem;
+} 
+@media screen and (max-width: 500px){ 
+.storeInfo_email{
+font-size: 1.5rem;
+}    
+}

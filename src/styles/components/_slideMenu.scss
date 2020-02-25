@@ -1,0 +1,161 @@
+
+
+/*desktop view */
+.slideMenuScroll {
+top: 8.9rem;
+position: fixed;
+}
+.slideMenuUnscroll {
+top: 8.9rem;
+position: relative;
+}
+.slideMenu {
+color: white;
+width: 100%;
+z-index: 10;
+height:5rem;
+background-color: black;
+transition: height $animationLength ease;
+display: flex;
+align-items: center;
+margin-top: -5rem;
+}
+
+.slideMenuClosed{
+//top: 8.9rem;
+color: white;
+width: 100%;
+z-index: 10;
+height: 0rem;
+background-color: black;
+transition: height 0.5s ease;
+display: flex;
+align-items: center;
+margin-top: -5rem;
+}
+
+.toolBarWrapper ul{
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+.slideMenuContent {
+color: white;
+top:12rem;
+display: flex;
+flex-direction: row;
+align-items: center;
+width: 100%;
+font-size: 1.5rem;
+justify-content: space-around;
+}
+
+.slideMenuContentOpen{
+top: 12rem;
+opacity: 1;
+transition: opacity 0.5s ease;
+transition-delay: $animationLength;
+}
+
+.slideMenuContentClosed{
+opacity: 0.0;
+}
+
+.hamburgerMenu{
+z-index: 20;
+position: relative;
+top:3rem;
+left:2rem;
+
+}
+.hamburgerContent {
+width: 27px; 
+height: 22.5px; 
+position: relative; 
+transform: rotate(0deg);    
+}
+/*mobile view*/
+@media screen and (max-width: 500px){
+.slideMenu {
+padding: 2rem 1rem 2rem 1rem;
+top: 4rem;
+color: white;
+width: 47%;
+z-index: 10;
+height:80rem;
+position: absolute;
+background-color: black;
+transition: width $animationLength ease;
+}
+.slideMenuScroll {
+top: 4rem;
+color: white;
+width: 47%;
+z-index: 10;
+height:80rem;
+position: fixed;
+background-color: black;
+transition: width $animationLength ease;
+}
+.slideMenuClosed{
+top: 8.9rem;
+color: white;
+width: 0%;
+height:100%;
+position: fixed;
+background-color: black;
+transition: width $animationLength ease;   
+transition-delay: 0.2s;
+padding: 1rem 0rem 2rem 0rem;
+}
+
+.toolBarWrapper ul{
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+.slideMenuContent {
+color: white;
+top: 5rem;
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+width: 100%;
+font-size: 1.4rem;
+justify-content: space-between;
+
+}
+
+.slideMenuContentOpen{
+position: relative;
+top: -15rem;
+opacity: 1;
+right: 0;
+transition: opacity 0.5s ease,right 0.5s ease;
+transition-delay: $animationLength;
+}
+
+.slideMenuContentClosed{
+position: relative;
+opacity: 0.0;
+right: 12rem;
+
+}
+
+
+.slideMenuContent div {
+padding: 2rem 2rem 1rem 1.5rem;
+}
+
+.hamburgerMenu{
+z-index: 20;
+position: absolute;
+top:1rem;
+left:2rem;
+}  
+
+}
+
+
+

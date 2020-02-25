@@ -1,0 +1,229 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 02-Feb-2020, 10:09:22
+    Author     : pol
+*/
+
+.ing_wrapper {
+display: flex;
+align-items: center;
+//justify-content: space-between;
+flex-direction: column;
+z-index:  -50;
+position:relative;
+background-color: white;    
+}
+
+.bottomShelf {
+//max-width: 500px;
+width: auto;        
+height: auto;
+position: relative; 
+display:block;
+//padding: 0rem $homepageMargin 0px $homepageMargin;
+display: relative;
+top: 0rem;
+transition:top 0.8s ease;
+}
+.bottomShelf_Ing_arrow {
+width: 1rem;
+height: 1rem;
+}
+.bottomShelf_ing{}
+
+/*.bottomShelf_Ing_holder {
+display: flex;
+justify-content: center;
+margin-bottom: 4rem;
+top: 0rem;
+transition: top 0.5s ease;
+}*/
+
+.bottomShelf_rel {
+    width: auto;
+    height: auto;
+    position: relative;
+    display: block;
+    display: relative;
+    top: 0rem;
+    transition: top 0.8s ease;
+}
+
+/*.bottomShelf_Ing_holder img {
+height: 40rem;
+width: 40rem;
+object-fit: contain;
+z-index: -60;
+}*/
+
+.wrapper{
+height:auto;
+width:auto;
+}
+
+.bottomShelf_Ing_left {
+display: flex;
+//background-color:red;
+flex-direction: column;
+height: auto;
+width: auto;
+}
+
+.bottomShelf_Ing_right {
+display: flex;
+//background-color:blue;
+flex-direction: column;
+height: auto;
+width: auto;
+justify-content: center;
+}
+
+.bottomShelf_Ing_feat {
+//background-color: blueviolet;
+height: auto;
+width: auto;
+position: relative;
+}
+
+/*.bottomShelf_Ing_feat_featImg {
+//background-color: purple;
+height: 200px;
+width: 40rem;
+top: 15rem;
+position: absolute;
+}*/
+
+/*.bottomShelf_Ing_feat_featTitle {
+//background-color: blue;
+font-size:40px;
+word-wrap: break-word;
+position: relative;
+bottom: -55%;
+font-weight: 900;
+margin-bottom: 1.5rem;    
+}*/
+
+/*.bottomShelf_Ing_feat_featSubTitle {
+//background-color: green;
+font-size:20px;
+position: relative; 
+bottom: -55%    
+}*/
+
+.bottomShelf_listIng {  
+z-index: -60;
+position: relative;
+}
+
+.bottomShelf_listIng_title {
+font-size: 4rem;
+font-weight: 900;
+color: $darkBlack;  
+margin-bottom: 2rem;
+z-index:$incrementTop+10;
+}
+
+/*.bottomShelf_listIng_noBullets{
+color: $lightBlack;
+font-size: 3rem;
+list-style: none;
+padding: 0;
+margin: 0;
+font-weight: 300;
+}*/
+
+.bottomShelf_listIngredients_natural{
+color: $naturalIngredient;
+
+}
+
+.bottomShelf_listIng {
+}
+
+.bottomShelf_listIng_list {
+margin-bottom : 2rem;
+}
+
+.bottomShelf_listIng_legend_wrapper{
+display: flex;
+justify-content: space-between;
+width: 30rem;
+}
+
+.bottomShelf_listIng_legend {
+font-size: 1rem;    
+}
+
+.bottomShelf_listIng_legend_circle{
+width: 20px;
+height: 20px;
+border-radius: 50%;
+//margin-right: 10rem;
+}
+
+.bottomShelf_listIng_legend_circle_wrapper{
+display:flex;
+justify-content: space-between;
+width: 10rem;
+height: 2rem;
+}
+
+.bottomShelf_listIng_legend_text{
+
+//margin-left: 20rem;
+
+}
+.centeredText {
+    text-align: center;
+    font-size: 10px;
+}
+.synthetic{background-color: $lightBlack;}
+.naturalIng {background-color:$naturalIngredient;}
+
+@media screen and (max-width: 500px){
+
+.bottomShelf_Ing_holder img {
+height: 20rem;
+width: 20rem;
+object-fit: contain;
+}
+
+.bottomShelf_Ing_feat_featTitle {
+//background-color: blue;
+font-size:20px;
+word-wrap: break-word;
+position: relative;
+bottom: 10%;
+font-weight: 900;
+margin-bottom: 1.5rem;    
+}
+
+.bottomShelf_Ing_feat_featSubTitle {
+//background-color: green;
+font-size:15px;
+position: relative; 
+bottom: 10%;    
+}
+
+.bottomShelf_Ing_feat_featImg {
+//background-color: purple;
+height: 200px;
+width: 100%;
+top: 15rem;
+position: absolute;
+}
+
+.bottomShelf_listIng_noBullets{
+color: $lightBlack;
+font-size: 1.5rem;
+list-style: none;
+padding: 0;
+margin: 0;
+font-weight: 300;
+}
+    
+}

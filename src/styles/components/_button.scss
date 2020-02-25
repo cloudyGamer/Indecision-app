@@ -1,0 +1,32 @@
+
+.big-button{
+    background-color: $brightPurp;
+    border: none; 
+    border-bottom: .6rem solid darken($brightPurp, 20%);
+    color: white;
+    font-weight: bold;
+    font-size: $largeSize;
+    margin-bottom: $xLargeSize;
+    width: 100%;
+    padding: 2.4rem;
+}
+
+.big-button:disabled{
+    opacity: .5;
+}
+
+.button {
+    background: $brightPurp;
+    border: none;
+    border-bottom: .3rem solid darken($brightPurp,10%);
+    color: white;
+    font-weight: 500;
+    padding: $smallSize;
+}
+
+.button--link {
+    background: none;
+    border: none;
+    color: $offWhite;
+    padding: 0;    
+}

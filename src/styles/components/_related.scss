@@ -1,0 +1,95 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 20-May-2019, 16:01:23
+    Author     : pol
+*/
+
+.related {
+margin-bottom: 2rem;
+}
+
+.relatedWrapper {
+background-color: red;    
+}
+
+.related_title {
+font-family: SackersGothicW01-Light;
+font-size: $ProductTextSmall;  
+letter-spacing: 0.20em !important;
+text-align: center;
+}
+
+related_title_container {
+display: flex;
+justify-content: space-around;
+}
+
+
+.related_image_container {
+display: flex;
+justify-content: center;
+}
+
+.related_image_bottomShelf {
+display: flex;
+flex-direction: row;
+align-items: center;
+font-size: 2.5rem;
+background-color: black;
+border-radius: 5rem;
+justify-content: space-between;
+width: 27.3rem;
+}
+
+.related_image_bottomShelf_wrapper{
+display:flex;
+justify-content: center;
+}
+
+.related_quantity {      
+font-size: 2rem;
+padding: 0;
+margin-left: 2rem;
+height: 3.5rem;
+margin-right: 0.5rem;
+width: 7rem;
+height: 3rem;
+}
+
+.related_basket_price_container {
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+align-items: center;
+height: 4rem;
+border-radius: 5rem;
+background-color: #727070;
+padding-left: 1rem;
+}
+
+.related_basket {
+height: 3rem;
+width: auto;
+z-index: 0;
+}
+
+
+
+.related_clicked_basket{
+z-index : 10;
+position: relative;
+right: 3rem;
+height: 3rem;
+width: 3rem;
+}
+
+
+.related_price {
+color: white;
+margin-left:2rem;
+font-size: 2rem;
+}
