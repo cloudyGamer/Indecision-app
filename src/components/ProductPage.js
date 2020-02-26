@@ -6,7 +6,7 @@
 //import from './'
 import React from 'react'; 
 import Banner from './Banner'
-import ToolBar from './ToolBar'
+import Toolbar from './Toolbar'
 import Product from './Product'
 import Template from './Template'
 //import Template from './Template'

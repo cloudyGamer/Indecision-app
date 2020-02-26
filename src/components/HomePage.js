@@ -12,7 +12,7 @@ import Action from './Action';
 import OptionModal from './OptionModal';
 import PHPFetch from './PHPFetch';
 import Banner from './Banner';
-import ToolBar from './ToolBar';
+import Toolbar from './Toolbar';
 import BigImage from './BigImage';
 import BriefProduct from './BriefProduct';
 import BriefProductSmall from './BriefProductSmall';

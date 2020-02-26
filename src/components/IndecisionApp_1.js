@@ -8,7 +8,7 @@
    import OptionModal from './OptionModal';
    import PHPFetch from './PHPFetch';
    import Banner from './Banner'
-   import ToolBar from './ToolBar'
+   import Toolbar from './Toolbar'
    import BigImage from './BigImage'
    import BriefProduct from './BriefProduct'
    import BriefProductSmall from './BriefProductSmall'
@@ -130,7 +130,7 @@
      childStateComponent: {component: this.RelatedProduct}
    }
 
-   this.toolBarObj = {
+   this.ToolbarObj = {
    menuHandleClick: this.menuHandleClick,
      state: this.state,
      masterObj: this.masterObj,
@@ -181,10 +181,10 @@
      stateObj: "",
      staleObj: "",
      tokenRequested: false,
-     toolBar: ToolBar,
+     Toolbar: Toolbar,
      basketState: 'value',
      scrollTop: 0,
-     toolBarClass: false
+     ToolbarClass: false
    }
 ////////////////////////////////////////
 //<editor-fold defaultstate="collapsed" desc="fnc and cdm">
@@ -1243,18 +1243,18 @@
 
    if (prevState.basketState !== this.state.basketState) {
    //console.log("Indec: CDU: stateObj" + JSON.stringify(this.state.stateObj));
-   //displayToolBar = this.renderedComp(toolBarObj, this.state.toolBar);
+   //displayToolbar = this.renderedComp(ToolbarObj, this.state.Toolbar);
    console.log("cdu:basketState state change detected");
-     console.log("INDE:CDU:basketState" + Object.keys(this.toolBarObj));
+     console.log("INDE:CDU:basketState" + Object.keys(this.ToolbarObj));
    } else {
    //console.log("Indec: CDU: basketState: no change detected");
    }
 
    if (prevState.promise !== this.state.promise) {
    //console.log("Indec: CDU: stateObj" + JSON.stringify(this.state.stateObj));
-   //displayToolBar = this.renderedComp(toolBarObj, this.state.toolBar);
+   //displayToolbar = this.renderedComp(ToolbarObj, this.state.Toolbar);
    console.log("cdu:promiseState state change detected");
-     //this.displayToolBar = this.renderedComp("cdu: toolbar",this.toolBarObj, this.state.toolBar);
+     //this.displayToolbar = this.renderedComp("cdu: Toolbar",this.ToolbarObj, this.state.Toolbar);
 
 
 
@@ -1385,11 +1385,11 @@
 ////////////////////////////////////////
    scrollBoi = () => {
    if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
-   let scrollBoi = "toolBarWrapperMoves";
+   let scrollBoi = "ToolbarWrapperMoves";
      console.log("Ladies and Gentleman we have ourselves a scrollBoi");
      document.getElementById("myP").className = "test";
    } else {
-   let scrollBoi = "toolBarWrapperMoves";
+   let scrollBoi = "ToolbarWrapperMoves";
      document.getElementById("myP").className = "";
    }
    }
@@ -1425,17 +1425,17 @@
    const scrollY = window.scrollY;
    const scrollTop = this.scrollRef.current.scrollTop;
 
-    if (scrollTop > 67 && this.state.toolBarClass===false ) {
-         const activeToolBarClass = this.state.toolBarClass;
+    if (scrollTop > 67 && this.state.ToolbarClass===false ) {
+         const activeToolbarClass = this.state.ToolbarClass;
          //console.log("greater than 70");
          /*console.log(`onScroll, window.scrollY: ${scrollY} myRef.scrollTop: ${scrollTop}`);*/
          this.setState({
-           toolBarClass: true
+           ToolbarClass: true
          });
-    }else if (scrollTop < 67 && this.state.toolBarClass===true){
+    }else if (scrollTop < 67 && this.state.ToolbarClass===true){
          //console.log("less than 70");
           this.setState({
-           toolBarClass: false
+           ToolbarClass: false
          });
     }
    }
@@ -1497,7 +1497,7 @@ const {scrollTop} = this.state;
      const color = "red";
      const testObj = {value: "one value"};
 // </editor-fold>///////////props bank
-     //console.log("INDE:REN:toolbarobj" + Object.keys(this.toolBarObj));
+     //console.log("INDE:REN:Toolbarobj" + Object.keys(this.ToolbarObj));
 //////////////////////////////////////// relatedObj
      const relatedHandlerObj = {
      masterObj: this.masterObj,
@@ -1512,7 +1512,7 @@ const {scrollTop} = this.state;
     const imageAd = "http://localhost:8888/3.0.2.0-OpenCart/upload/image/" + image;*/
 ////////////////////////////////////////*product page const
    const renderArchive = /*  <Header ></Header>
-    <ToolBar ></ToolBar>
+    <Toolbar ></Toolbar>
     
     <Product 
     fetch={this.fetch}
@@ -1581,7 +1581,7 @@ const {scrollTop} = this.state;
     />*/ + 2;
 //<editor-fold defaultstate="collapsed" desc="lets">
      let displayComp;
-     let displayToolBar;
+     let displayToolbar;
      let greeting = "Hello User";
      let slideMenuContent;
      let slideMenu;
@@ -1593,20 +1593,20 @@ const {scrollTop} = this.state;
      const mobileDetect = window.matchMedia("(max-width: 500px)");
      const mainApp = "appDiv " + scrollBoi;
 //</editor-fold>
-     //console.log("give me my message"+Object.keys(this.toolBarObj));
-     const toolBarRenderMessage = "render: ToolBar: api_token= " + JSON.stringify(this.state.promise);
-     displayToolBar = this.renderedComp(toolBarRenderMessage, this.toolBarObj, this.state.toolBar);
+     //console.log("give me my message"+Object.keys(this.ToolbarObj));
+     const ToolbarRenderMessage = "render: Toolbar: api_token= " + JSON.stringify(this.state.promise);
+     displayToolbar = this.renderedComp(ToolbarRenderMessage, this.ToolbarObj, this.state.Toolbar);
      const testComp = Basket;
 //<editor-fold defaultstate="collapsed" desc="comment">
 // const node = ReactDOM.findDOMNode(this); 
 //       const node2 = ReactDOM.findDOMNode(this); 
 //      console.log("scrolltop val= "+node2.scrollTop);
 //                if (node.id ==="mainApp" ) {
-//       let scrollBoi = "toolBarWrapperMoves";
+//       let scrollBoi = "ToolbarWrapperMoves";
 //       console.log("Ladies and Gentleman we have ourselves a scrollBoi");
 //   
 //  } else {
-//       let scrollBoi =  "toolBarWrapperMoves";
+//       let scrollBoi =  "ToolbarWrapperMoves";
 //       console.log("We have no scroll boy");
 //  } 
 //</editor-fold>
@@ -1632,7 +1632,7 @@ const {scrollTop} = this.state;
 //const node = myRef.current;
 
      const categoryBomb = {searchQuery: {path: "59"}}
-   const toolBar = <ToolBar 
+   const Toolbar = <Toolbar 
 
     />;
 //</editor-fold>
@@ -1659,7 +1659,7 @@ const {scrollTop} = this.state;
           
           
      
-          <div className={this.state.toolBarClass ? 'toolBarWrapperScroll':'toolBarWrapper'}  >
+          <div className={this.state.ToolbarClass ? 'ToolbarWrapperScroll':'ToolbarWrapper'}  >
                     <div className={slideMenu}>
                     <div className={slideMenuContent}>
                                         {
@@ -1695,7 +1695,7 @@ const {scrollTop} = this.state;
                     
    
 
-                    <div>{displayToolBar}</div>
+                    <div>{displayToolbar}</div>
                     <div>
                 
             </div>

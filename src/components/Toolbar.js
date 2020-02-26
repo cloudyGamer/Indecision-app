@@ -20,13 +20,13 @@ export default class Toolbar extends React.Component {
         //this.props.propObj.masterObj.basketInitialiser("tb:cdm ",this.props.propObj.masterObj.APIGenericNoBody);
         if(this.props.propObj.masterObj.state.promise!=='value'){
              
-              //console.log("api_token detected in toolBar and it is"+JSON.stringify(this.props.propObj.masterObj.state.promise));
-        }else{/*console.log("no api_token detected in toolbar - it is "+JSON.stringify(this.props.propObj.masterObj.state.promise));*/}
+              //console.log("api_token detected in Toolbar and it is"+JSON.stringify(this.props.propObj.masterObj.state.promise));
+        }else{/*console.log("no api_token detected in Toolbar - it is "+JSON.stringify(this.props.propObj.masterObj.state.promise));*/}
   
   } 
   
   componentWillUnmount(){
-       console.log("ToolBar component unmounted");
+       console.log("Toolbar component unmounted");
   }
   
   handleClick() {
@@ -67,10 +67,10 @@ export default class Toolbar extends React.Component {
      }else{
           el = document.getElementById('emptyMessage');
           console.log("tokenM no token className= "+el.className);
-          el.className = "toolBar_empty toolBar_animation";
+          el.className = "Toolbar_empty Toolbar_animation";
           setTimeout(
                function(){
-                    el.className = "toolBar_empty";
+                    el.className = "Toolbar_empty";
                },1000
           ); 
      }
@@ -79,10 +79,10 @@ export default class Toolbar extends React.Component {
 
   displayEmpty = (event) => {
      console.log("displayEmpty executed");
-     event.target.classList = "toolBar_empty toolBar_animation";
+     event.target.classList = "Toolbar_empty Toolbar_animation";
        setTimeout(
           function(){
-             event.target.classList = "toolBar_empty";
+             event.target.classList = "Toolbar_empty";
           },1000
           ); 
 }
@@ -98,7 +98,7 @@ export default class Toolbar extends React.Component {
       const importedPromise = basketParameter.promise;
       const products = basketParameter.basketState.products;
      
-      console.log("toolbar rendered basketEmpty= "+this.state.emptyBasket);
+      console.log("Toolbar rendered basketEmpty= "+this.state.emptyBasket);
       let cartContents;
       if(products){
             //cartContents = basketParameter.basketState;
@@ -111,22 +111,22 @@ export default class Toolbar extends React.Component {
        const menuMult = 1.2;
         return(<div xmlns="http://www.w3.org/1999/xhtml">
     
-    <div className="toolBar_container">
+    <div className="Toolbar_container">
  
     {importedPromise!==undefined&& 
       console.log("tool bar rerendered. api_token= "+JSON.stringify(importedPromise.api_token))}
     <div>{console.log("basket contents?: "+Object.keys(basketParameter.basketState))}</div> 
-    <div id="toolBar"className="toolBar">
+    <div id="Toolbar"className="Toolbar">
     <div id="menuFavicon">
     
     </div>
-    <div id="socialMediabutton" className="toolBar_info" onClick={()=> tinyProp.setStoreInfo("toolBar")}><img src="assets/socialMedia.png" /></div>
-    <div className="toolBar_basketContainer">
+    <div id="socialMediabutton" className="Toolbar_info" onClick={()=> tinyProp.setStoreInfo("Toolbar")}><img src="assets/socialMedia.png" /></div>
+    <div className="Toolbar_basketContainer">
     {importedPromise!==undefined&& <div>{cartContents}</div>}
-      <div className="toolBar_emptyWrapper">
-          <div className="toolBar_mask"></div>
-          <div id="emptyMessage" className="toolBar_empty">Empty</div>
-          <div className="toolBar_basket" id="basketButton" onClick={() => this.basketClickHandler(importedPromise)}>
+      <div className="Toolbar_emptyWrapper">
+          <div className="Toolbar_mask"></div>
+          <div id="emptyMessage" className="Toolbar_empty">Empty</div>
+          <div className="Toolbar_basket" id="basketButton" onClick={() => this.basketClickHandler(importedPromise)}>
                <img src="assets/basket.png" />
           </div>
       </div>
