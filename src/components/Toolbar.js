@@ -134,7 +134,7 @@ export default class Toolbar extends React.Component {
     </div>
         </div>
         </div>
-         {/*  <div className="testing_mode">Testing Mode • All Purchases Void</div>*/}
+         
          
                     
                </div>)
