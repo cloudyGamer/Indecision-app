@@ -56,7 +56,7 @@ return ( <div>/*/////formWrapper /////*/}
        <div className={"feature"}>
             <div>
                  <div className={"featProd_sidea"}>
-                   <img src={"https://testonly.forevermecosmetics.ie/upload/image/catalog/apple_raspberry_swirl_1.png"} alt={"product_photo"} className={"featProd_Image_photo"} />
+                   <img src={"https://testonly.forevermecosmetics.ie/image/catalog/apple_raspberry_swirl_1.png"} alt={"product_photo"} className={"featProd_Image_photo"} />
                  </div>
                  
                  <div className={"featProd_sideb"}>
@@ -72,7 +72,7 @@ return ( <div>/*/////formWrapper /////*/}
        <div className={"feature"}>
           <div>
                <div className={"featProd_sidea"}>
-                 <img src={"https://testonly.forevermecosmetics.ie/upload/image/catalog/flyingHigh.png"} alt={"product_photo"} className={"featProd_Image_photo"} />
+                 <img src={"https://testonly.forevermecosmetics.ie/image/catalog/flyingHigh.png"} alt={"product_photo"} className={"featProd_Image_photo"} />
                </div>
           <div className={"featProd_sideb"}>
                <div className={"featProd_titleHold"}>

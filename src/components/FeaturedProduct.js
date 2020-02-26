@@ -58,8 +58,8 @@ export default class FeaturedProduct extends React.Component {
         firstLine2 = firstLine2.join("");
         firstLine2 = this.master.innerHtml(firstLine2);
         //firstLine2 = firstLine2+"..."
-        var productImage = "https://testonly.forevermecosmetics.ie/upload/image/"+this.state1.image;
-        var productImage2 = "https://testonly.forevermecosmetics.ie/upload/image/"+this.state2.image;
+        var productImage = "https://testonly.forevermecosmetics.ie/image/"+this.state1.image;
+        var productImage2 = "https://testonly.forevermecosmetics.ie/image/"+this.state2.image;
         const productId1 = this.state1.product_id;
         const productId2 = this.state2.product_id;
         const trimmedPrice = Math.round(this.state1.price * 100) / 100;

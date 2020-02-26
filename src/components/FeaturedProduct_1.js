@@ -31,7 +31,7 @@ export default class FeaturedProduct extends React.Component {
         const parentState = this.callState;
         let description = this.state.description;
         var firstLine = description.split('', 6);
-        var productImage = "https://testonly.forevermecosmetics.ie/upload/image/"+this.state.image;
+        var productImage = "https://testonly.forevermecosmetics.ie/image/"+this.state.image;
         const trimmedPrice = Math.round(this.state.price * 100) / 100;
 
           return(

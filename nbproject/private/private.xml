@@ -15,29 +15,6 @@
             </bookmark>
         </file>
         <file>
-            <url>src/components/Toolbar.js</url>
-            <bookmark id="121">
-                <name/>
-                <line>51</line>
-                <key/>
-            </bookmark>
-            <bookmark id="120">
-                <name/>
-                <line>67</line>
-                <key/>
-            </bookmark>
-            <bookmark id="119">
-                <name/>
-                <line>116</line>
-                <key/>
-            </bookmark>
-            <bookmark id="117">
-                <name/>
-                <line>142</line>
-                <key/>
-            </bookmark>
-        </file>
-        <file>
             <url>src/styles/components/_product.scss</url>
             <bookmark id="113">
                 <name/>
@@ -67,6 +44,75 @@
             <bookmark id="114">
                 <name/>
                 <line>826</line>
+                <key/>
+            </bookmark>
+        </file>
+        <file>
+            <url>src/components/Product.js</url>
+            <bookmark id="107">
+                <name/>
+                <line>0</line>
+                <key/>
+            </bookmark>
+            <bookmark id="108">
+                <name/>
+                <line>37</line>
+                <key/>
+            </bookmark>
+            <bookmark id="110">
+                <name/>
+                <line>348</line>
+                <key/>
+            </bookmark>
+            <bookmark id="109">
+                <name/>
+                <line>386</line>
+                <key/>
+            </bookmark>
+            <bookmark id="111">
+                <name/>
+                <line>487</line>
+                <key/>
+            </bookmark>
+            <bookmark id="112">
+                <name/>
+                <line>555</line>
+                <key/>
+            </bookmark>
+        </file>
+        <file>
+            <url>src/components/HomePage.js</url>
+            <bookmark id="45">
+                <name/>
+                <line>458</line>
+                <key/>
+            </bookmark>
+            <bookmark id="36">
+                <name/>
+                <line>947</line>
+                <key/>
+            </bookmark>
+        </file>
+        <file>
+            <url>src/components/Toolbar.js</url>
+            <bookmark id="121">
+                <name/>
+                <line>51</line>
+                <key/>
+            </bookmark>
+            <bookmark id="120">
+                <name/>
+                <line>67</line>
+                <key/>
+            </bookmark>
+            <bookmark id="119">
+                <name/>
+                <line>116</line>
+                <key/>
+            </bookmark>
+            <bookmark id="117">
+                <name/>
+                <line>142</line>
                 <key/>
             </bookmark>
         </file>
@@ -125,39 +171,6 @@
             </bookmark>
         </file>
         <file>
-            <url>src/components/Product.js</url>
-            <bookmark id="107">
-                <name/>
-                <line>0</line>
-                <key/>
-            </bookmark>
-            <bookmark id="108">
-                <name/>
-                <line>37</line>
-                <key/>
-            </bookmark>
-            <bookmark id="110">
-                <name/>
-                <line>348</line>
-                <key/>
-            </bookmark>
-            <bookmark id="109">
-                <name/>
-                <line>386</line>
-                <key/>
-            </bookmark>
-            <bookmark id="111">
-                <name/>
-                <line>487</line>
-                <key/>
-            </bookmark>
-            <bookmark id="112">
-                <name/>
-                <line>555</line>
-                <key/>
-            </bookmark>
-        </file>
-        <file>
             <url>src/components/BasketProduct.js</url>
             <bookmark id="77">
                 <name/>
@@ -165,21 +178,12 @@
                 <key/>
             </bookmark>
         </file>
-        <file>
-            <url>src/components/HomePage.js</url>
-            <bookmark id="45">
-                <name/>
-                <line>458</line>
-                <key/>
-            </bookmark>
-            <bookmark id="36">
-                <name/>
-                <line>947</line>
-                <key/>
-            </bookmark>
-        </file>
     </editor-bookmarks>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
-        <group/>
+        <group>
+            <file>file:/Users/pol/Documents/react-course-projects/Forever-Me/webpack.config.js</file>
+            <file>file:/Users/pol/Documents/react-course-projects/Forever-Me/src/app.js</file>
+            <file>file:/Users/pol/Documents/react-course-projects/Forever-Me/package.json</file>
+        </group>
     </open-files>
 </project-private>

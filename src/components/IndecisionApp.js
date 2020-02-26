@@ -1,4 +1,5 @@
  import React from 'react';
+ 
 //import from './'
 // <editor-fold defaultstate="collapsed" desc=" Imported comps ">
    import Header from './Header';
@@ -104,8 +105,8 @@
    testVal: "testVal",
      category: "Bath Bombs",
      api_token: undefined,
-     fetchUrl: "https://testonly.forevermecosmetics.ie/upload/getCatagory.php",
-     package: {address: "https://testonly.forevermecosmetics.ie/upload/index.php?route=product/category/apiCategory",
+     fetchUrl: "https://testonly.forevermecosmetics.ie/getCatagory.php",
+     package: {address: "https://testonly.forevermecosmetics.ie/index.php?route=product/category/apiCategory",
        searchQuery: {}},
      childStateComponent: {component: "RelatedProduct"}
    }
@@ -121,8 +122,8 @@
    /*this.categoryObj = {
     category: "Bath Bombs",
     api_token : undefined,
-    fetchUrl: "https://testonly.forevermecosmetics.ie/upload/getCatagory.php",
-    package: {address: "https://testonly.forevermecosmetics.ie/upload/index.php?route=product/category/apiCategory",
+    fetchUrl: "https://testonly.forevermecosmetics.ie/getCatagory.php",
+    package: {address: "https://testonly.forevermecosmetics.ie/index.php?route=product/category/apiCategory",
     searchQuery : {path: "59"}},
     childStateComponent : {component: RelatedProduct} 
     } */
@@ -130,8 +131,8 @@
    this.basketObj = {
    testVal: "basketObj: testValueBilly",
      category: "Bath Bombs",
-     fetchUrl: "https://testonly.forevermecosmetics.ie/upload/APINoBody.php",
-     address: "https://testonly.forevermecosmetics.ie/upload/index.php?route=api/cart/products&api_token=",
+     fetchUrl: "https://testonly.forevermecosmetics.ie/APINoBody.php",
+     address: "https://testonly.forevermecosmetics.ie/index.php?route=api/cart/products&api_token=",
      childStateComponent: {component: "BasketProduct"},
      paymentProcess : this.paymentProcess
    }
@@ -142,8 +143,8 @@
      api_token: undefined,
      masterObj: this.masterObj,
      payLoad: {
-      fetchUrl: "https://testonly.forevermecosmetics.ie/upload/getCatagory.php",
-      package: {address: "https://testonly.forevermecosmetics.ie/upload//index.php?route=api/cart/remove&api_token=",
+      fetchUrl: "https://testonly.forevermecosmetics.ie/getCatagory.php",
+      package: {address: "https://testonly.forevermecosmetics.ie//index.php?route=api/cart/remove&api_token=",
          searchQuery: {}}},
      childStateComponent: {component: this.RelatedProduct}
    }
@@ -363,7 +364,7 @@
      console.log(uniqueMessage + "token set to true  " + JSON.stringify(this.state.tokenRequested))
      });
 //     console.log("APIaddtocart - token equals___" + api_token);
-     const url = "https://testonly.forevermecosmetics.ie/upload/index.php?route=api/cart/add&api_token=" + api_token;
+     const url = "https://testonly.forevermecosmetics.ie/index.php?route=api/cart/add&api_token=" + api_token;
      const method = "POST";
 ////console.log("parameter passed____"+api_token);  
      const body = new FormData();
@@ -376,7 +377,7 @@
 //      console.log(pair[0]+ ', ' + pair[1]); 
 //      }*/
 //
-     return fetch("https://testonly.forevermecosmetics.ie/upload/addToCart.php", {method, body})
+     return fetch("https://testonly.forevermecosmetics.ie/addToCart.php", {method, body})
      .then(response => response.json())
      .then(response => JSON.parse(response))
      .then(data =>
@@ -389,11 +390,11 @@
 ////////////////////////////////////////
    apiLogIn = (api_token) => {
    console.log(" apiLogIn fired");
-     const url = "https://testonly.forevermecosmetics.ie/upload/index.php?route=api/shipping/address&api_token=" + api_token;
+     const url = "https://testonly.forevermecosmetics.ie/index.php?route=api/shipping/address&api_token=" + api_token;
      const method = "POST";
      const body = new FormData();
      body.append("url", url);
-     fetch("https://testonly.forevermecosmetics.ie/upload/logInAPI.php", {method, body})
+     fetch("https://testonly.forevermecosmetics.ie/logInAPI.php", {method, body})
      .then(res => res.json())
      .then(response => JSON.parse(response))
      .then(promise =>
@@ -486,7 +487,7 @@ extractDescription = (description) => {
    fetchCategory = (data, uniqueMessage) => {
           let category = "string";
    console.log("fetchCategory executed with parameter" + data + "from within" + uniqueMessage);
-       return window.fetch(`https://testonly.forevermecosmetics.ie/upload/index.php?route=product/product/getProductCategory&product_id=` + data, {
+       return window.fetch(`https://testonly.forevermecosmetics.ie/index.php?route=product/product/getProductCategory&product_id=` + data, {
      method: 'GET', // or 'PUT' 
        headers: {}
      }).then(res => res.json());
@@ -1053,7 +1054,7 @@ extractDescription = (description) => {
      const body = new FormData();
      console.log(" apiRequest2 fired");
 //console.log("this.state.promise equals___"+this.state.promise);
-     return  fetch("https://testonly.forevermecosmetics.ie/upload/requestToken.php",
+     return  fetch("https://testonly.forevermecosmetics.ie/requestToken.php",
      {method, body})
      .then(response => response.json())
      .then(response => JSON.parse(response))
@@ -1083,7 +1084,7 @@ extractDescription = (description) => {
 //             function () { /*console.log("apiRequest-second- - setState undefined"+this.state.promise);*/
 //             }
 //           );
-     return  fetch("https://testonly.forevermecosmetics.ie/upload/requestToken2.php",
+     return  fetch("https://testonly.forevermecosmetics.ie/requestToken2.php",
      {method, body})
      .then(response => response.json())
      .then(response => JSON.parse(response))
@@ -1159,8 +1160,8 @@ window.open(url);
     const method = "POST";
     const body = new FormData(this.form);
     console.log(this.form); 
-    //return window.fetch("https://testonly.forevermecosmetics.ie/upload/addNewCustomer.php&firstname="+firstname+"&lastname="+lastname+"&email="+email+"&telephone="+telephone 
-    return window.fetch("https://testonly.forevermecosmetics.ie/upload/addNewCustomer.php"                
+    //return window.fetch("https://testonly.forevermecosmetics.ie/addNewCustomer.php&firstname="+firstname+"&lastname="+lastname+"&email="+email+"&telephone="+telephone 
+    return window.fetch("https://testonly.forevermecosmetics.ie/addNewCustomer.php"                
     
     , {method, body})
     //http://localhost:8888/3.0.2.0-OpenCart/upload/index.php?route=checkout/cart/add
@@ -1169,7 +1170,7 @@ window.open(url);
 /////////// apiRequest
    apiRequest = () => {
    console.log(" apiRequest fired");
-     return window.fetch("https://testonly.forevermecosmetics.ie/upload/requestToken.php"
+     return window.fetch("https://testonly.forevermecosmetics.ie/requestToken.php"
        , {
        method: 'POST', //post works in establishing session
 
@@ -1484,7 +1485,7 @@ window.open(url);
 //console.log("fetch executed" );
    console.log("fetch executed with parameter" + data + "from within" + uniqueMessage);
      const testStr = "product/product&product_id=50";
-     return  window.fetch(`https://testonly.forevermecosmetics.ie/upload/index.php?route=` + data, {
+     return  window.fetch(`https://testonly.forevermecosmetics.ie/index.php?route=` + data, {
      method: 'GET', // or 'PUT' 
 
        headers: {
@@ -1510,7 +1511,7 @@ window.open(url);
      console.log("testFnc Data=" + data + "splitArray" + keyWord);
 //////////////////////////
      console.log("testFnc executed with parameter" + data + "from within" + uniqueMessage);
-     return  window.fetch(`https://testonly.forevermecosmetics.ie/upload/index.php?route=` + data, {
+     return  window.fetch(`https://testonly.forevermecosmetics.ie/index.php?route=` + data, {
      method: 'GET',
        headers: {
        }
@@ -1646,7 +1647,7 @@ window.open(url);
      this.setState({
      open: !this.state.open
      });
-     return  this.noCurlCall("https://testonly.forevermecosmetics.ie/upload/index.php?route=product/category/apiCategories", "Indec:CDM", this.categoryObj);
+     return  this.noCurlCall("https://testonly.forevermecosmetics.ie/index.php?route=product/category/apiCategories", "Indec:CDM", this.categoryObj);
    }
 //////////////////////////////////////// APIGenericPostSave
    APIGenericPostCat = (obj) => {
@@ -1833,7 +1834,7 @@ const {scrollTop} = this.state;
      let scrollBoi;
      let currentObj;
      let slideMenuScroll = "";
-     //let availableCategories = this.noCurlCall("https://testonly.forevermecosmetics.ie/upload/index.php?route=product/category/apiCategories","Indec:CDM",this.categoryObj);
+     //let availableCategories = this.noCurlCall("https://testonly.forevermecosmetics.ie/index.php?route=product/category/apiCategories","Indec:CDM",this.categoryObj);
      const mobileDetect = window.matchMedia("(max-width: 500px)");
      const mainApp = "appDiv " + scrollBoi;
 //</editor-fold>
