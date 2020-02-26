@@ -11,23 +11,23 @@ import AddOption from './AddOption';
 import Action from './Action';
 import OptionModal from './OptionModal';
 import PHPFetch from './PHPFetch';
-import Banner from './Banner'
-import ToolBar from './ToolBar'
-import BigImage from './BigImage'
-import BriefProduct from './BriefProduct'
-import BriefProductSmall from './BriefProductSmall'
-import BriefReview from './BriefReview'
-import BlogFeature from './BlogFeature'
-import BlogFeatureLeft from './BlogFeatureLeft'
-import ProductPage from './ProductPage'
-import Product from './Product'
-import Basket from  './Basket'
-import PaymentProcess from './PaymentProcess'
-import Ingredients from './Ingredients'
-import Payment from './Payment'
-import Related from './Related'
-import ChildState from './ChildState'
-import FeaturedProduct from './FeaturedProduct'
+import Banner from './Banner';
+import ToolBar from './ToolBar';
+import BigImage from './BigImage';
+import BriefProduct from './BriefProduct';
+import BriefProductSmall from './BriefProductSmall';
+import BriefReview from './BriefReview';
+import BlogFeature from './BlogFeature';
+import BlogFeatureLeft from './BlogFeatureLeft';
+import ProductPage from './ProductPage';
+import Product from './Product';
+import Basket from  './Basket';
+import PaymentProcess from './PaymentProcess';
+import Ingredients from './Ingredients';
+import Payment from './Payment';
+import Related from './Related';
+import ChildState from './ChildState';
+import FeaturedProduct from './FeaturedProduct';
 //</editor-fold>
 
 export default class HomePage extends React.Component {
