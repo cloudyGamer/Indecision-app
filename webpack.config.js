@@ -7,7 +7,7 @@ module.exports = (env) => {
      const isProduction = env === 'production';
      console.log('env',env);
      return {
-               entry : ['./nodemodules/regenerator-runtime/runtime','./nodemodules/core-js','./src/app.js'],
+               entry : ['regenerator-runtime/runtime','core-js','./src/app.js'],
               output : {
                   path: path.join(__dirname,'public'),
                   filename: 'bundle.js'
