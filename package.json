@@ -5,7 +5,8 @@
   "author": "omitted",
   "license": "MIT",
   "engines": {
-    "node": "8.12.0"
+  "node": "8.12.0",
+  "yarn": "1.22.0"
   },
   "scripts": {
     "serve": "webpack --progress public/",
