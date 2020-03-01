@@ -245,7 +245,7 @@
 ////////////////////////////////////////
    componentDidMount() {
    //console.log("CDM Prop Const Obj= " + JSON.stringify(this.objData));
-    this.apiRequest();
+    //this.apiRequest();
      this.setState({currentObj: this.homePageObj,
        currentComponent: HomePage
      });
