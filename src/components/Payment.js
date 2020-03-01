@@ -13,8 +13,8 @@ export default class Payment extends React.Component {
   componentDidMount() {
   console.log('Payment component did mount');
   const APILogin = "catalog/controller/api/login.php";
-  const tokenPHP = "https://testonly.forevermecosmetics.ie/apiToken.php";
-  const apiAddress = "https://testonly.forevermecosmetics.ie/index.php?route=/api/shipping/token&api_token=";
+  const tokenPHP = "http://testonly.forevermecosmetics.ie/opencart-3.0.3.1/upload/apiToken.php";
+  const apiAddress = "http://testonly.forevermecosmetics.ie/opencart-3.0.3.1/upload/index.php?route=/api/shipping/token&api_token=";
   //const newToken = this.state.promise.api_token; 
   this.apiRequest2().then(data =>this.apiRequest3());
   } 
@@ -28,7 +28,7 @@ const body = new FormData();
 console.log(" apiRequest2 fired");
 
 //console.log("this.state.promise equals___"+this.state.promise);
-  return  fetch("https://testonly.forevermecosmetics.ie/requestToken.php",
+  return  fetch("http://testonly.forevermecosmetics.ie/opencart-3.0.3.1/upload/requestToken.php",
       { method,body})
     .then(response => response.json())
     .then(response => JSON.parse(response))
@@ -56,7 +56,7 @@ this.setState({promise : ''},
  function () { /*console.log("apiRequest-second- - setState undefined"+this.state.promise);*/ }
  );
  
-  return  fetch("https://testonly.forevermecosmetics.ie/requestToken2.php",
+  return  fetch("http://testonly.forevermecosmetics.ie/opencart-3.0.3.1/upload/requestToken2.php",
       { method,body})
     .then(response => response.json())
     .then(response => JSON.parse(response))
