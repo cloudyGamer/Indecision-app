@@ -300,9 +300,9 @@ setCondition for currentComponent
  Indec |  RP  | productClickHandler(uniqueMessage,"50")
  Indec |  RP  | this.fetch(getProduct,uniqueMessage).then(promise => this.setComponent(uniqueMessage,Product,this.productObj));
  ////////////////////// add product UI web addresses
- 1. https://www.testonly.forevermecosmetics.ie/opencart-3.0.3.1/upload/admin/index.php?route=catalog/product/add&user_token=9JwAvY5LSeZ251ZNSzA1ppkQjOamyJOU
+ 1. www.testonly.forevermecosmetics.ie/opencart-3.0.3.1/upload/admin/index.php?route=catalog/product/add&user_token=9JwAvY5LSeZ251ZNSzA1ppkQjOamyJOU
  image
- https://www.testonly.forevermecosmetics.ie/opencart-3.0.3.1/upload/admin/index.php?route=common/filemanager&user_token=9JwAvY5LSeZ251ZNSzA1ppkQjOamyJOU&target=input-image0&thumb=thumb-image0
+ www.testonly.forevermecosmetics.ie/opencart-3.0.3.1/upload/admin/index.php?route=common/filemanager&user_token=9JwAvY5LSeZ251ZNSzA1ppkQjOamyJOU&target=input-image0&thumb=thumb-image0
  //
  Data sent to model - data={"product_description":
              "name":"Dummy Product 2",
