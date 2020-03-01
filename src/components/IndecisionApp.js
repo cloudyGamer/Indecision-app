@@ -144,7 +144,7 @@
      masterObj: this.masterObj,
      payLoad: {
       fetchUrl: "www.testonly.forevermecosmetics.ie/opencart-3.0.3.1/upload/getCatagory.php",
-      package: {address: "www.testonly.forevermecosmetics.ie/opencart-3.0.3.1/upload//index.php?route=api/cart/remove&api_token=",
+      package: {address: "www.testonly.forevermecosmetics.ie/opencart-3.0.3.1/upload/index.php?route=api/cart/remove&api_token=",
          searchQuery: {}}},
      childStateComponent: {component: this.RelatedProduct}
    }
@@ -245,7 +245,7 @@
 ////////////////////////////////////////
    componentDidMount() {
    //console.log("CDM Prop Const Obj= " + JSON.stringify(this.objData));
-
+    this.apiRequest();
      this.setState({currentObj: this.homePageObj,
        currentComponent: HomePage
      });
