@@ -76,12 +76,12 @@ async componentDidMount(){
      let uniqueMessage = "HP:CDM";
      console.log(uniqueMessage+" Mounted");
      {//call google sheets
-     //const webScraperAddress = "http://testonly.forevermecosmetics.ie/opencart-3.0.3.1/upload/quickstart.php";
+     //const webScraperAddress = "https://testonly.forevermecosmetics.ie/opencart-3.0.3.1/upload/quickstart.php";
      //call shopify
      //const shopifyAPI = "https://bubbles-and-co.myshopify.com/admin/api/2019-04/products.json";
      }
      //////////////////////////////////////// feat prod 1
-     const productAddress = "http://testonly.forevermecosmetics.ie/opencart-3.0.3.1/upload/index.php?route=product/product&product_id=";
+     const productAddress = "https://testonly.forevermecosmetics.ie/opencart-3.0.3.1/upload/index.php?route=product/product&product_id=";
      const productId = "50";
      const featuredProductAddress = productAddress + productId;
      const resolvedObject = await this.featuredProduct(featuredProductAddress,uniqueMessage,"feature1");
@@ -122,7 +122,7 @@ async componentDidMount(){
 featuredProductLoader =  async (iteration,uniqueMessage,keyName) => {
      //console.log(uniqueMessage+"featuredProductLoader executed "+iteration+": "+keyName);
      uniqueMessage = "featuredProductLoader/target";
-     const productAddress = "http://testonly.forevermecosmetics.ie/opencart-3.0.3.1/upload/index.php?route=product/product&product_id="+iteration;
+     const productAddress = "https://testonly.forevermecosmetics.ie/opencart-3.0.3.1/upload/index.php?route=product/product&product_id="+iteration;
      const resolvedObject = await this.featuredProduct(productAddress,uniqueMessage,keyName);
      //console.log(uniqueMessage+"resolved object key"+JSON.stringify(resolvedObject));
      const billy = "featuredProducts"+keyName;
@@ -156,7 +156,7 @@ console.log("example text ran upon mounting" + obj);
 APIAddToCart (api_token) {
 console.log("APIAddToCart ran");
 console.log("APIaddtocart - token equals___" + api_token);
-const url = "http://testonly.forevermecosmetics.ie/opencart-3.0.3.1/upload/index.php?route=api/cart/add&api_token=" + api_token;
+const url = "https://testonly.forevermecosmetics.ie/opencart-3.0.3.1/upload/index.php?route=api/cart/add&api_token=" + api_token;
 const method = "POST";
 const quantity = 1;
 const product_id = 50;
@@ -171,7 +171,7 @@ body.append("product_id", product_id);
  console.log(pair[0]+ ', ' + pair[1]); 
  }*/
 
-fetch("http://testonly.forevermecosmetics.ie/opencart-3.0.3.1/upload/addToCart.php", { method, body })
+fetch("https://testonly.forevermecosmetics.ie/opencart-3.0.3.1/upload/addToCart.php", { method, body })
 .then(res => res.json())
 .then(data => alert(JSON.stringify(data, null, "\t")));
 }
@@ -179,11 +179,11 @@ fetch("http://testonly.forevermecosmetics.ie/opencart-3.0.3.1/upload/addToCart.p
 //////////////////////////////////////// apiLogIn
 apiLogIn = (api_token) => {
 console.log(" apiLogIn fired");
-const url = "http://testonly.forevermecosmetics.ie/opencart-3.0.3.1/upload/index.php?route=api/shipping/address&api_token=" + api_token;
+const url = "https://testonly.forevermecosmetics.ie/opencart-3.0.3.1/upload/index.php?route=api/shipping/address&api_token=" + api_token;
 const method = "POST";
 const body = new FormData();
 body.append("url", url);
-fetch("http://testonly.forevermecosmetics.ie/opencart-3.0.3.1/upload/logInAPI.php", { method, body })
+fetch("https://testonly.forevermecosmetics.ie/opencart-3.0.3.1/upload/logInAPI.php", { method, body })
 .then(res => res.json())
 .then(response => JSON.parse(response))
 .then(promise =>
@@ -327,7 +327,7 @@ const method = "POST";
 const body = new FormData();
 console.log(" apiRequest2 fired");
 //console.log("this.state.promise equals___"+this.state.promise);
-return  fetch("http://testonly.forevermecosmetics.ie/opencart-3.0.3.1/upload/requestToken.php",
+return  fetch("https://testonly.forevermecosmetics.ie/opencart-3.0.3.1/upload/requestToken.php",
 { method, body})
 .then(response => response.json())
 .then(response => JSON.parse(response))
@@ -356,7 +356,7 @@ const body = new FormData();
 this.setState({promise : ''},
 function () { /*console.log("apiRequest-second- - setState undefined"+this.state.promise);*/ }
 );
-return  fetch("http://testonly.forevermecosmetics.ie/opencart-3.0.3.1/upload/requestToken2.php",
+return  fetch("https://testonly.forevermecosmetics.ie/opencart-3.0.3.1/upload/requestToken2.php",
 { method, body})
 .then(response => response.json())
 .then(response => JSON.parse(response))
@@ -424,7 +424,7 @@ fetch = (data, splitArray) => {
 //////////////////////////
 //console.log("fetch executed with parameter"+data);
 const testStr = "product/product&product_id=50";
-return  window.fetch(`http://testonly.forevermecosmetics.ie/opencart-3.0.3.1/upload/index.php?route=` + data, {
+return  window.fetch(`https://testonly.forevermecosmetics.ie/opencart-3.0.3.1/upload/index.php?route=` + data, {
 method: 'GET', // or 'PUT' 
 
 headers: {
@@ -474,8 +474,8 @@ window.open(url);
  const method = "POST";
  const body = new FormData(this.form);
  console.log(this.form); 
- //return window.fetch("http://testonly.forevermecosmetics.ie/opencart-3.0.3.1/upload/addNewCustomer.php&firstname="+firstname+"&lastname="+lastname+"&email="+email+"&telephone="+telephone 
- return window.fetch("http://testonly.forevermecosmetics.ie/opencart-3.0.3.1/upload/addNewCustomer.php"                
+ //return window.fetch("https://testonly.forevermecosmetics.ie/opencart-3.0.3.1/upload/addNewCustomer.php&firstname="+firstname+"&lastname="+lastname+"&email="+email+"&telephone="+telephone 
+ return window.fetch("https://testonly.forevermecosmetics.ie/opencart-3.0.3.1/upload/addNewCustomer.php"                
  
  , {method, body})
  //http://localhost:8888/3.0.2.0-OpenCart/upload/index.php?route=checkout/cart/add
@@ -485,7 +485,7 @@ window.open(url);
 /////////// apiRequest
 apiRequest = () => {
 console.log(" apiRequest fired");
-return window.fetch("http://testonly.forevermecosmetics.ie/opencart-3.0.3.1/upload/requestToken.php"
+return window.fetch("https://testonly.forevermecosmetics.ie/opencart-3.0.3.1/upload/requestToken.php"
 , {
 method: 'POST', //post works in establishing session
 
@@ -918,8 +918,8 @@ const color = "red";
 const categoryObj = {
 category: "Bath Bombs",
 api_token : undefined,
-fetchUrl: "http://testonly.forevermecosmetics.ie/opencart-3.0.3.1/upload/getCatagory.php",
-package: {address: "http://testonly.forevermecosmetics.ie/opencart-3.0.3.1/upload/index.php?route=product/category/apiCategory",
+fetchUrl: "https://testonly.forevermecosmetics.ie/opencart-3.0.3.1/upload/getCatagory.php",
+package: {address: "https://testonly.forevermecosmetics.ie/opencart-3.0.3.1/upload/index.php?route=product/category/apiCategory",
 searchQuery : {path: "59"}}
 
 };
