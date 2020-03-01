@@ -1,14 +1,14 @@
 /* 
  * To change this license header, choose License Headers in Project Properties.
- * To change this OpencartCalls file, choose Tools | OpencartCallss
- * and open the OpencartCalls in the editor.
+ * To change this Opencartcalls file, choose Tools | Opencartcallss
+ * and open the Opencartcalls in the editor.
  */
 import React from 'react'; 
 
-export default class OpencartCalls extends React.Component {
+export default class Opencartcalls extends React.Component {
   
           componentDidMount() {
-  console.log('OpencartCalls component did mount');
+  console.log('Opencartcalls component did mount');
   const testStr = "product/product&product_id=53";
   {this.fetch(testStr)} 
           }

@@ -350,7 +350,7 @@ localState = (key,uni) => {
         if(tinyProp!=='value') {
         console.log("product:resources.name"+JSON.stringify(this.props.propObj.masterObj.stateStorage));     
         console.log("product: resources.name found");
-        productImage = "www.testonly.forevermecosmetics.ie/opencart-3.0.3.1/upload/image/"+tinyProp.image;
+        productImage = "https://pauldowlingportfolio.com/opencart-3.0.3.1/upload/image/"+tinyProp.image;
         name = tinyProp.name;
         description = tinyProp.description;
         price = Math.round(tinyProp.price * 100) / 100;
