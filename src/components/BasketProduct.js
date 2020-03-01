@@ -150,8 +150,8 @@ export default class BasketProduct extends React.Component {
                 <div className="related_price">{this.props.propObj.price}</div>
                 <div className="related_basket_price_container">{this.props.masterObj&& 
                        <div onClick={()=>this.removeBasketHandler(importedPromise)}>
-                         <img className="basket_remove_x" src="assets/white_x.png"/>
-                         <img className="related_clicked_basket img_visible" src="assets/black_x.png"/>
+                         <img className="basket_remove_x" src="https://pauldowlingportfolio.com/opencart-3.0.3.1/assets/white_x.png"/>
+                         <img className="related_clicked_basket img_visible" src="https://pauldowlingportfolio.com/opencart-3.0.3.1/assets/black_x.png"/>
                        </div> }
                        <div className={"basket_quantity"}>{this.props.propObj.quantity}</div>
                       {/*  <input type="number" value={this.props.propObj.quantity} className="related_quantity"  name="quantity" min="1" max="10" onChange={(e) => this.setState(tinyProp.handleChangeIntern(e))} />*/}

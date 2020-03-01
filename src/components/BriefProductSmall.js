@@ -19,13 +19,13 @@ const BriefProductSmall = (props) => (
                      
                  {/*// photo //*/}
                         
-                            <img src="assets/christmas_carol_1.png" className="topShelfSmall_Image_photo"/>
+                            <img src="https://pauldowlingportfolio.com/opencart-3.0.3.1/assets/christmas_carol_1.png" className="topShelfSmall_Image_photo"/>
                         
                  {/*// *hoto //*/}
                  
                  {/*// vegan //*/}
                         
-                             <img className="topShelfSmall_Image_vegan" src="assets/V_de_Vegan.png" />
+                             <img className="topShelfSmall_Image_vegan" src="https://pauldowlingportfolio.com/opencart-3.0.3.1/assets/V_de_Vegan.png" />
                          
                  {/*// *egan //*/}
                  

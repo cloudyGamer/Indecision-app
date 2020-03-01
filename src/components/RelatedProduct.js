@@ -119,15 +119,15 @@ export default class RelatedProduct extends React.Component {
                        <div>
                             <div>{this.state.basketClicked==false&& 
                                  <div  onClick={(e)=> master.delayBasket("featProd",this.props.propObj.product_id,master.basketHandler,master.fncAddToggle,this.localState,"basketClicked",this.state.quantity)}>
-                                   <img className="related_basket" src="assets/basket.png"/>
-                                   <img className="related_clicked_basket img_visible" src="assets/basket_black.png"/>
+                                   <img className="related_basket" src="https://pauldowlingportfolio.com/opencart-3.0.3.1/assets/basket.png"/>
+                                   <img className="related_clicked_basket img_visible" src="https://pauldowlingportfolio.com/opencart-3.0.3.1/assets/basket_black.png"/>
                                  </div> 
                             }</div>
 
                             <div>{this.state.basketClicked==true&& 
                                  <div  onClick={(e)=> master.delayBasket("featProd",this.props.propObj.product_id,master.removeItemWrapper,master.fncRemoveToggle,this.localState,"basketClicked",this.state.quantity)}>
-                                   <img className="related_basket" src="assets/basket.png"/>
-                                   <img className="related_clicked_basket img_invisible" src="assets/basket_black.png"/>
+                                   <img className="related_basket" src="https://pauldowlingportfolio.com/opencart-3.0.3.1/assets/basket.png"/>
+                                   <img className="related_clicked_basket img_invisible" src="https://pauldowlingportfolio.com/opencart-3.0.3.1/assets/basket_black.png"/>
                                  </div> 
                             }</div>
                        </div>       

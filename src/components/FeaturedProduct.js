@@ -97,11 +97,11 @@ export default class FeaturedProduct extends React.Component {
                            <div>
                               <div  onClick={(e)=> this.master.delayBasket("featProd",productId1,this.master.basketHandler,this.master.fncAddToggle,this.localState,"basketClicked","1")}>
                               <div className="featProd_white_basket_container">
-                                   <img className="featured_basket" src="assets/basket_black.png"/>
+                                   <img className="featured_basket" src="https://pauldowlingportfolio.com/opencart-3.0.3.1/assets/basket_black.png"/>
                               </div>
                                    
                               <div className="featured_clicked_basket_background img_visible">
-                                   <img className="featured_clicked_basket" src="assets/basket.png"/>
+                                   <img className="featured_clicked_basket" src="https://pauldowlingportfolio.com/opencart-3.0.3.1/assets/basket.png"/>
                               </div>
                               </div> 
                            </div>
@@ -110,11 +110,11 @@ export default class FeaturedProduct extends React.Component {
                          {this.state.basketClicked==true&&
                             <div  onClick={(e)=>  this.master.delayBasket("featProd",productId1,this.master.removeItemWrapper,this.master.fncRemoveToggle,this.localState,"basketClicked","1")}>
                               <div className="featProd_white_basket_container">
-                                   <img className="featured_basket" src="assets/basket_black.png"/>
+                                   <img className="featured_basket" src="https://pauldowlingportfolio.com/opencart-3.0.3.1/assets/basket_black.png"/>
                               </div>
 
                               <div className="featured_clicked_basket_background img_invisible">
-                                   <img className="featured_clicked_basket" src="assets/basket.png"/>
+                                   <img className="featured_clicked_basket" src="https://pauldowlingportfolio.com/opencart-3.0.3.1/assets/basket.png"/>
                                    
                               </div>
                             </div> 
@@ -133,11 +133,11 @@ export default class FeaturedProduct extends React.Component {
                            <div>
                               <div  onClick={(e)=> this.master.delayBasket("featProd",productId2,this.master.basketHandler,this.master.fncAddToggle,this.localState,"basketClicked2","1")}>
                               <div className="featProd_white_basket_container">
-                                   <img className="featured_basket" src="assets/basket_black.png"/>
+                                   <img className="featured_basket" src="https://pauldowlingportfolio.com/opencart-3.0.3.1/assets/basket_black.png"/>
                               </div>
                                    
                               <div className="featured_clicked_basket_background img_visible">
-                                   <img className="featured_clicked_basket" src="assets/basket.png"/>
+                                   <img className="featured_clicked_basket" src="https://pauldowlingportfolio.com/opencart-3.0.3.1/assets/basket.png"/>
                               </div>
                               </div> 
                            </div>
@@ -147,11 +147,11 @@ export default class FeaturedProduct extends React.Component {
                          {this.state.basketClicked2==true&&
                             <div  onClick={(e)=>this.master.delayBasket("featProd",productId2,this.master.removeItemWrapper,this.master.fncRemoveToggle,this.localState,"basketClicked2","1")}>
                               <div className="featProd_white_basket_container">
-                                   <img className="featured_basket" src="assets/basket_black.png"/>
+                                   <img className="featured_basket" src="https://pauldowlingportfolio.com/opencart-3.0.3.1/assets/basket_black.png"/>
                               </div>
 
                               <div className="featured_clicked_basket_background img_invisible">
-                                   <img className="featured_clicked_basket" src="assets/basket.png"/>
+                                   <img className="featured_clicked_basket" src="https://pauldowlingportfolio.com/opencart-3.0.3.1/assets/basket.png"/>
                                    
                               </div>
                             </div> 
