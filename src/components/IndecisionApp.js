@@ -489,7 +489,7 @@ extractDescription = (description) => {
    console.log("fetchCategory executed with parameter" + data + "from within" + uniqueMessage);
        return window.fetch(`https://testonly.forevermecosmetics.ie/index.php?route=product/product/getProductCategory&product_id=` + data, {
      method: 'GET', // or 'PUT' 
-       headers: {}
+       headers: {'Content-Type': 'application/json'}
      }).then(res => res.json());
       // .then(res =>  {category: res});
 
@@ -1483,14 +1483,16 @@ window.open(url);
      fetch = (data, uniqueMessage) => {
 //////////////////////////
 //console.log("fetch executed" );
-   console.log("fetch executed with parameter" + data + "from within" + uniqueMessage);
+     let headers = new Headers();
+     headers.append('Content-Type', 'application/json');
+     headers.append('Accept', 'application/json');
+     headers.append('Origin','*');
+     console.log("fetch executed with parameter" + data + "from within" + uniqueMessage);
      const testStr = "product/product&product_id=50";
      return  window.fetch(`https://testonly.forevermecosmetics.ie/index.php?route=` + data, {
-     method: 'GET', // or 'PUT' 
-
-       headers: {
-
-       }
+       mode: 'cors',
+       method: 'GET', // or 'PUT' 
+       headers: headers
      }).then(response => response.json())
 
      .then(json =>

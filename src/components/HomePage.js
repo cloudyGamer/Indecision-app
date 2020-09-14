@@ -832,14 +832,18 @@ componentLoader = () => {
      
 featuredProduct =  async (data ,uniqueMessage,keyName) => {
 //////////////////////////
- //console.log("featuredProduct executed with parameter" + data + "from within" + uniqueMessage);
+ console.log("featuredProduct executed with parameter" + data + "from within" + uniqueMessage);
  const body = new FormData();
+ let headers = new Headers();
+headers.append('Content-Type', 'application/json');
+headers.append('Accept', 'application/json');
+headers.append('Origin','*');
 
  const encoded = btoa('6725a4fb40bf84a8a9354b7609324830:6725a4fb40bf84a8a9354b7609324830');
  const resolvedPromise = await window.fetch(data, {
+      mode: 'cors',
       method: 'GET', // or 'PUT' 
-      headers: {
-   }
+      headers: headers
  });
  const resJson = await resolvedPromise.json();
  const returnedJson = await resJson;
