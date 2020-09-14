@@ -376,7 +376,7 @@ localState = (key,uni) => {
         if(tinyProp!=='value') {
         console.log("product:resources.name"+JSON.stringify(this.props.propObj.masterObj.stateStorage));     
         console.log("product: resources.name found");
-        productImage = "https://testonly.forevermecosmetics.ie/image/"+tinyProp.image;
+        productImage = "https://pauldowlingportfolio.com/opencart-3.0.3.1/upload/image/"+tinyProp.image;
         name = tinyProp.name;
         ingredients = tinyProp.description;
         description = tinyProp.description;
@@ -447,7 +447,7 @@ localState = (key,uni) => {
                      <div className="midShelf_Basketcontainer" onClick={(e)=> master.delayBasket(e,tinyProp.product_id,master.basketHandler,master.fncAddToggle,this.localState,"basketClicked",this.state.quantity)}>
                      
                          <div className="midShelf_Basketicon">
-                            <img  src="assets/basket.png"></img>
+                            <img  src="https://pauldowlingportfolio.com/opencart-3.0.3.1/assets/basket.png"></img>
                          </div>
                            
                          <div  id="basketUnclicked" className="midshelf_addToCart basketUnclicked">  
@@ -462,7 +462,7 @@ localState = (key,uni) => {
                      <div className="midShelf_Basketcontainer" onClick={(e)=>  master.delayBasketRemove(e,tinyProp.product_id,master.removeItemWrapper,master.fncRemoveToggle,this.localState,"basketClicked",this.state.quantity)}>
                      
                          <div className="midShelf_Basketicon">
-                            <img  src="assets/basket.png"></img>
+                            <img  src="https://pauldowlingportfolio.com/opencart-3.0.3.1/assets/basket.png"></img>
                          </div>
 
                          <div   id="basketClicked" className="midshelf_addToCart basketClicked">  
@@ -478,16 +478,16 @@ localState = (key,uni) => {
         <div className="bottomShelf_greyWrapper">
                      <div className="bottomShelf_socMedButton">
                           <div className="bottomShelf_socMedButton_but1">
-                          <img src="assets/fb_icon_3.png" className="bottomShelf_socMedButton_but1"></img>
+                          <img src="https://pauldowlingportfolio.com/opencart-3.0.3.1/assets/fb_icon_3.png" className="bottomShelf_socMedButton_but1"></img>
                           </div>
                      
                           <div className="bottomShelf_socMedButton_but1">
-                          <img src="assets/insta_icon_4.png"></img>
+                          <img src="https://pauldowlingportfolio.com/opencart-3.0.3.1/assets/insta_icon_4.png"></img>
                           </div>
                      
                           <div className="bottomShelf_socMedButton_but1">
             
-                          <img src="assets/twitter_icon_3.png"></img>
+                          <img src="https://pauldowlingportfolio.com/opencart-3.0.3.1/assets/twitter_icon_3.png"></img>
                           </div>
                      </div>
                      
@@ -514,7 +514,7 @@ localState = (key,uni) => {
                               Featured Ingredients
                               </div>
                    </div>
-                   <img  src="assets/arrow-down-48.png" className="titleHolder_arrow rotated">
+                   <img  src="https://pauldowlingportfolio.com/opencart-3.0.3.1/assets/arrow-down-48.png" className="titleHolder_arrow rotated">
                    </img>
               </div>
               
@@ -539,7 +539,7 @@ localState = (key,uni) => {
                               Featured Ingredients
                               </div>
                    </div>
-                   <img src="assets/arrow-down-48.png" className="titleHolder_arrow unrotated">
+                   <img src="https://pauldowlingportfolio.com/opencart-3.0.3.1/assets/arrow-down-48.png" className="titleHolder_arrow unrotated">
                    </img>
               </div>
           
@@ -567,7 +567,7 @@ localState = (key,uni) => {
                                Ingredients
                                </div>
                             </div>
-                              <img src="assets/arrow-down-48.png" className="titleHolder_arrow unrotated">
+                              <img src="https://pauldowlingportfolio.com/opencart-3.0.3.1/assets/arrow-down-48.png" className="titleHolder_arrow unrotated">
                               </img>
                          </div>
 
@@ -598,7 +598,7 @@ localState = (key,uni) => {
                           Ingredients
                           </div>
                        </div>
-                         <img src="assets/arrow-down-48.png" className="titleHolder_arrow rotated">
+                         <img src="https://pauldowlingportfolio.com/opencart-3.0.3.1/assets/arrow-down-48.png" className="titleHolder_arrow rotated">
                          </img>
                     </div>
                     
@@ -630,7 +630,7 @@ localState = (key,uni) => {
                                Related Article
                                </div>
                             </div>
-                              <img src="assets/arrow-down-48.png" className="titleHolder_arrow unrotated">
+                              <img src="https://pauldowlingportfolio.com/opencart-3.0.3.1/assets/arrow-down-48.png" className="titleHolder_arrow unrotated">
                               </img>
                          </div>
 
@@ -654,7 +654,7 @@ localState = (key,uni) => {
                                Related Article
                                </div>
                             </div>
-                              <img src="assets/arrow-down-48.png" className="titleHolder_arrow rotated">
+                              <img src="https://pauldowlingportfolio.com/opencart-3.0.3.1/assets/arrow-down-48.png" className="titleHolder_arrow rotated">
                               </img>
                          </div>
                          <div id="collapsedRel" className="uncollapsedRel">

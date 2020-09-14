@@ -105,8 +105,8 @@ const obj = {"success":"Success: API session successfully started!",
 const string = "string";
 ////////////////////////////////////////
 const APILogin = "catalog/controller/api/login.php";
-const tokenPHP = "https://testonly.forevermecosmetics.ie/apiToken.php";
-const apiAddress = "https://testonly.forevermecosmetics.ie/index.php?route=/api/shipping/token&api_token=";
+const tokenPHP = "https://pauldowlingportfolio.com/opencart-3.0.3.1/upload/apiToken.php";
+const apiAddress = "https://pauldowlingportfolio.com/opencart-3.0.3.1/upload/index.php?route=/api/shipping/token&api_token=";
 //const newToken = this.state.promise.api_token; 
 //this.apiRequest2().then(data => this.apiRequest3())
 //.then(promise => this.APIAddToCart(this.state.promise.api_token))
@@ -160,7 +160,7 @@ const method = "POST";
 const body = new FormData();
 console.log(" PaymentProcess: apiRequest2 fired");
 //console.log("this.state.promise equals___"+this.state.promise);
-return  fetch("https://testonly.forevermecosmetics.ie/requestToken.php",
+return  fetch("https://pauldowlingportfolio.com/opencart-3.0.3.1/upload/requestToken.php",
 { method, body})
 .then(response => response.json())
 .then(response => JSON.parse(response))//.then(res => console.log("paymentProcess/json.parse"+JSON.stringify(res)));
@@ -188,7 +188,7 @@ const body = new FormData();
 this.setState({promise : ''},
 function () { /*console.log("apiRequest-second- - setState undefined"+this.state.promise);*/ }
 );
-return  fetch("https://testonly.forevermecosmetics.ie/requestToken2.php",
+return  fetch("https://pauldowlingportfolio.com/opencart-3.0.3.1/upload/requestToken2.php",
 { method, body})
 .then(response => response.json())
 .then(response => JSON.parse(response))
@@ -261,7 +261,7 @@ fetch("https://httpbin.org/post", { method, body })
 }
 ////////////////////////////////////////* code pen working
 APIAddCustomer (api_token) {
-const url = "https://testonly.forevermecosmetics.ie/index.php?route=api/customer&api_token=" + api_token;
+const url = "https://pauldowlingportfolio.com/opencart-3.0.3.1/upload/index.php?route=api/customer&api_token=" + api_token;
 const method = "POST";
 //console.log("parameter passed____"+api_token);  
 const body = new FormData(this.form);
@@ -272,7 +272,7 @@ for (var pair of body.entries()) {
 // console.log(pair[0]+ ', ' + pair[1]); 
 }
 
-return  fetch("https://testonly.forevermecosmetics.ie/addNewCustomer.php", { method, body })
+return  fetch("https://pauldowlingportfolio.com/opencart-3.0.3.1/upload/addNewCustomer.php", { method, body })
 .then(res => res.json())
 .then(data => alert(JSON.stringify(data, null, "\t")));
 /* .then(promise => 
@@ -283,7 +283,7 @@ return  fetch("https://testonly.forevermecosmetics.ie/addNewCustomer.php", { met
 ////////////////////////////////////////* code pen working
 APIAddToCart (api_token) {
 // console.log("APIaddtocart ran. token equals___"+api_token);
-const url = "https://testonly.forevermecosmetics.ie/index.php?route=api/cart/add&api_token=" + api_token;
+const url = "https://pauldowlingportfolio.com/opencart-3.0.3.1/upload/index.php?route=api/cart/add&api_token=" + api_token;
 const method = "POST";
 const quantity = 1;
 const product_id = 50;
@@ -298,7 +298,7 @@ body.append("product_id", product_id);
  console.log(pair[0]+ ', ' + pair[1]); 
  }*/
 
-fetch("https://testonly.forevermecosmetics.ie/addToCart.php", { method, body })
+fetch("https://pauldowlingportfolio.com/opencart-3.0.3.1/upload/addToCart.php", { method, body })
 .then(res => res.json())
 .then(data => alert(JSON.stringify(data, null, "\t")));
 }
@@ -385,11 +385,11 @@ return fetch(fetchUrl, { method: "POST", body })
 .then(data => console.log(JSON.stringify(data), null, "\t"));
 }
 ///////////
-//https://testonly.forevermecosmetics.ie/index.php?route=/api/shipping/methods&api_token=bee6b1b9f22fd417ede11a687c
-//https://testonly.forevermecosmetics.ie/index.php?route=/api/shipping/methods&api_token=549f50ac71333331778b73e7ad
+//https://pauldowlingportfolio.com/opencart-3.0.3.1/upload/index.php?route=/api/shipping/methods&api_token=bee6b1b9f22fd417ede11a687c
+//https://pauldowlingportfolio.com/opencart-3.0.3.1/upload/index.php?route=/api/shipping/methods&api_token=549f50ac71333331778b73e7ad
 else {
 body.append("url", url);
-console.log("https://testonly.forevermecosmetics.ie/index.php?route=/api/shipping/methods&api_token=" + api_token);
+console.log("https://pauldowlingportfolio.com/opencart-3.0.3.1/upload/index.php?route=/api/shipping/methods&api_token=" + api_token);
 return fetch(fetchUrl, {method, body})
 .then(res => res.json())
 //.then(data => console.log(JSON.stringify(data), null, "\t"));
@@ -443,11 +443,11 @@ return fetch(fetchUrl, { method: "POST", body })
 .then(data => console.log(JSON.stringify(data), null, "\t"));
 }
 ///////////
-//https://testonly.forevermecosmetics.ie/index.php?route=/api/shipping/methods&api_token=bee6b1b9f22fd417ede11a687c
-//https://testonly.forevermecosmetics.ie/index.php?route=/api/shipping/methods&api_token=549f50ac71333331778b73e7ad
+//https://pauldowlingportfolio.com/opencart-3.0.3.1/upload/index.php?route=/api/shipping/methods&api_token=bee6b1b9f22fd417ede11a687c
+//https://pauldowlingportfolio.com/opencart-3.0.3.1/upload/index.php?route=/api/shipping/methods&api_token=549f50ac71333331778b73e7ad
 else {
 body.append("url", url);
-console.log("https://testonly.forevermecosmetics.ie/index.php?route=/api/shipping/methods&api_token=" + api_token);
+console.log("https://pauldowlingportfolio.com/opencart-3.0.3.1/upload/index.php?route=/api/shipping/methods&api_token=" + api_token);
 return fetch(fetchUrl, {method, body})
 .then(res => res.json())
 .then(//next call 
@@ -512,8 +512,8 @@ return fetch(fetchUrl, { method: "POST", body })
 .then(data => console.log(JSON.stringify(data), null, "\t"));
 }
 ///////////
-//https://testonly.forevermecosmetics.ie/index.php?route=/api/shipping/methods&api_token=bee6b1b9f22fd417ede11a687c
-//https://testonly.forevermecosmetics.ie/index.php?route=/api/shipping/methods&api_token=549f50ac71333331778b73e7ad
+//https://pauldowlingportfolio.com/opencart-3.0.3.1/upload/index.php?route=/api/shipping/methods&api_token=bee6b1b9f22fd417ede11a687c
+//https://pauldowlingportfolio.com/opencart-3.0.3.1/upload/index.php?route=/api/shipping/methods&api_token=549f50ac71333331778b73e7ad
 else {
 body.append("url", url);
 console.log("object undefined");
@@ -566,8 +566,8 @@ const headers = {
 "Access-Control-Request-Headers" : "",
 };
 ///////////
-const paymentMethodsAddress = "https://testonly.forevermecosmetics.ie/index.php?route=api/payment/methods&api_token=";
-const paymentMethodsCurl = "https://testonly.forevermecosmetics.ie/addPaymentMethods.php";
+const paymentMethodsAddress = "https://pauldowlingportfolio.com/opencart-3.0.3.1/upload/index.php?route=api/payment/methods&api_token=";
+const paymentMethodsCurl = "https://pauldowlingportfolio.com/opencart-3.0.3.1/upload/addPaymentMethods.php";
 if (obj !== undefined){
 console.log("APIGenAxios object defined");
 for (var property in obj) {
@@ -662,8 +662,8 @@ const headers = {
 "Access-Control-Request-Headers" : "",
 };
 ///////////
-const paymentMethodsAddress = "https://testonly.forevermecosmetics.ie/index.php?route=api/payment/methods&api_token=";
-const paymentMethodsCurl = "https://testonly.forevermecosmetics.ie/addPaymentMethods.php";
+const paymentMethodsAddress = "https://pauldowlingportfolio.com/opencart-3.0.3.1/upload/index.php?route=api/payment/methods&api_token=";
+const paymentMethodsCurl = "https://pauldowlingportfolio.com/opencart-3.0.3.1/upload/addPaymentMethods.php";
 if (obj !== undefined){
 console.log("APIGenAxios object defined");
 for (var property in obj) {
@@ -758,8 +758,8 @@ const headers = {
 "Access-Control-Request-Headers" : "",
 };
 ///////////
-const paymentMethodsAddress = "https://testonly.forevermecosmetics.ie/index.php?route=api/payment/methods&api_token=";
-const paymentMethodsCurl = "https://testonly.forevermecosmetics.ie/addPaymentMethods.php";
+const paymentMethodsAddress = "https://pauldowlingportfolio.com/opencart-3.0.3.1/upload/index.php?route=api/payment/methods&api_token=";
+const paymentMethodsCurl = "https://pauldowlingportfolio.com/opencart-3.0.3.1/upload/addPaymentMethods.php";
 if (obj !== undefined){
 console.log("APIGenAxios object defined");
 for (var property in obj) {
@@ -853,8 +853,8 @@ const headers = {
 "Access-Control-Request-Headers" : "",
 };
 ///////////
-const paymentMethodsAddress = "https://testonly.forevermecosmetics.ie/index.php?route=api/payment/methods&api_token=";
-const paymentMethodsCurl = "https://testonly.forevermecosmetics.ie/addPaymentMethods.php";
+const paymentMethodsAddress = "https://pauldowlingportfolio.com/opencart-3.0.3.1/upload/index.php?route=api/payment/methods&api_token=";
+const paymentMethodsCurl = "https://pauldowlingportfolio.com/opencart-3.0.3.1/upload/addPaymentMethods.php";
 if (obj !== undefined){
 console.log("paymentTester object defined");
 for (var property in obj) {
@@ -912,7 +912,7 @@ fetch(cUrl, { method })
 //////////////////////////////////////// add shipping address
 APIShippingAddress (api_token) {
 console.log("APIShippingAddress Fired");
-const url = "https://testonly.forevermecosmetics.ie/index.php?route=api/shipping/address&api_token=" + api_token;
+const url = "https://pauldowlingportfolio.com/opencart-3.0.3.1/upload/index.php?route=api/shipping/address&api_token=" + api_token;
 const method = "POST";
 console.log("parameter passed____" + api_token);
 const body = new FormData(this.form);
@@ -924,7 +924,7 @@ for (var pair of body.entries()) {
 console.log(pair[0] + ', ' + pair[1]);
 }
 
-fetch("https://testonly.forevermecosmetics.ie/AddNewShipAddress.php", { method, body })
+fetch("https://pauldowlingportfolio.com/opencart-3.0.3.1/upload/AddNewShipAddress.php", { method, body })
 .then(res => res.json())
 .then(data => alert(JSON.stringify(data, null, "\t")));
 }
@@ -932,8 +932,8 @@ fetch("https://testonly.forevermecosmetics.ie/AddNewShipAddress.php", { method, 
 checkoutFuncWrap (checkoutGuest, checkoutGuestSave,api_token) {
 console.log("checkout wrap func fired");
 /////////// shipping consts method
-const shippingMethodAddress = "https://testonly.forevermecosmetics.ie/index.php?route=api/shipping/method&api_token=";
-const shippingMethodCurl = "https://testonly.forevermecosmetics.ie/addShippingMethod.php";
+const shippingMethodAddress = "https://pauldowlingportfolio.com/opencart-3.0.3.1/upload/index.php?route=api/shipping/method&api_token=";
+const shippingMethodCurl = "https://pauldowlingportfolio.com/opencart-3.0.3.1/upload/addShippingMethod.php";
 const shippingObjMethod = {shipping_method:"flat.flat"};
 ///////////
 this.APIAddCustomer(api_token);
@@ -946,7 +946,7 @@ apiRequest = () => {
 const api_token = "api_token";
 console.log(" apiRequest fired");
 console.log(this.state.promise);
-return window.fetch("https://testonly.forevermecosmetics.ie/requestToken.php",
+return window.fetch("https://pauldowlingportfolio.com/opencart-3.0.3.1/upload/requestToken.php",
 {
 method: "POST", // *GET, POST, PUT, DELETE, etc.
 
@@ -972,11 +972,11 @@ console.log("anymessage" + this.props.api_token
 ////////////////////////////////////////
 apiLogIn = (api_token) => {
 console.log(" apiLogIn fired");
-const url = "https://testonly.forevermecosmetics.ie/index.php?route=api/shipping/address&api_token=" + api_token;
+const url = "https://pauldowlingportfolio.com/opencart-3.0.3.1/upload/index.php?route=api/shipping/address&api_token=" + api_token;
 const method = "POST";
 const body = new FormData();
 body.append("url", url);
-fetch("https://testonly.forevermecosmetics.ie/logInAPI.php", { method, body })
+fetch("https://pauldowlingportfolio.com/opencart-3.0.3.1/upload/logInAPI.php", { method, body })
 .then(res => res.json())
 .then(response => JSON.parse(response))
 .then(promise =>
@@ -1159,42 +1159,42 @@ const routeGuest = "checkout/guest";
 const query = "queries";
 const dataRnd = "string";
 const dataRnd2 = "string2";
-const checkoutGuest = "https://testonly.forevermecosmetics.ie/index.php?route=checkout/guest";
-const checkoutGuestSave = "https://testonly.forevermecosmetics.ie/index.php?route=checkout/guest/save&api_token=99bfd11c4b3cc5130712995760";
-const shippingMethodsAddress = "https://testonly.forevermecosmetics.ie/index.php?route=api/shipping/methods&api_token=";
-const shippingMethodsCurl = "https://testonly.forevermecosmetics.ie/addShippingMethods.php";
+const checkoutGuest = "https://pauldowlingportfolio.com/opencart-3.0.3.1/upload/index.php?route=checkout/guest";
+const checkoutGuestSave = "https://pauldowlingportfolio.com/opencart-3.0.3.1/upload/index.php?route=checkout/guest/save&api_token=99bfd11c4b3cc5130712995760";
+const shippingMethodsAddress = "https://pauldowlingportfolio.com/opencart-3.0.3.1/upload/index.php?route=api/shipping/methods&api_token=";
+const shippingMethodsCurl = "https://pauldowlingportfolio.com/opencart-3.0.3.1/upload/addShippingMethods.php";
 const shippingObj = {shipping_method:"flat.flat"};
-const shippingMethodAddress = "https://testonly.forevermecosmetics.ie/index.php?route=api/shipping/method&api_token=";
-const shippingMethodCurl = "https://testonly.forevermecosmetics.ie/addShippingMethod.php";
+const shippingMethodAddress = "https://pauldowlingportfolio.com/opencart-3.0.3.1/upload/index.php?route=api/shipping/method&api_token=";
+const shippingMethodCurl = "https://pauldowlingportfolio.com/opencart-3.0.3.1/upload/addShippingMethod.php";
 //
-const paymentAddressAddress = "https://testonly.forevermecosmetics.ie/index.php?route=api/payment/address&api_token=";
-const paymentAddressCurl = "https://testonly.forevermecosmetics.ie/addPaymentAddress.php";
+const paymentAddressAddress = "https://pauldowlingportfolio.com/opencart-3.0.3.1/upload/index.php?route=api/payment/address&api_token=";
+const paymentAddressCurl = "https://pauldowlingportfolio.com/opencart-3.0.3.1/upload/addPaymentAddress.php";
 //
-const paymentMethodsAddress = "https://testonly.forevermecosmetics.ie/index.php?route=api/payment/methods&api_token=";
-const paymentMethodsCurl = "https://testonly.forevermecosmetics.ie/addPaymentMethods.php";
+const paymentMethodsAddress = "https://pauldowlingportfolio.com/opencart-3.0.3.1/upload/index.php?route=api/payment/methods&api_token=";
+const paymentMethodsCurl = "https://pauldowlingportfolio.com/opencart-3.0.3.1/upload/addPaymentMethods.php";
 //
-const paymentMethodAddress = "https://testonly.forevermecosmetics.ie/index.php?route=api/payment/method&api_token=";
-const paymentMethodCurl = "https://testonly.forevermecosmetics.ie/addPaymentMethod.php";
+const paymentMethodAddress = "https://pauldowlingportfolio.com/opencart-3.0.3.1/upload/index.php?route=api/payment/method&api_token=";
+const paymentMethodCurl = "https://pauldowlingportfolio.com/opencart-3.0.3.1/upload/addPaymentMethod.php";
 const paymentObj = {payment_method:"pp_standard"};
 //order
-const orderCurl = "https://testonly.forevermecosmetics.ie/addOrder.php";
-const orderAddress = "https://testonly.forevermecosmetics.ie/index.php?route=api/order/add&api_token=";
+const orderCurl = "https://pauldowlingportfolio.com/opencart-3.0.3.1/upload/addOrder.php";
+const orderAddress = "https://pauldowlingportfolio.com/opencart-3.0.3.1/upload/index.php?route=api/order/add&api_token=";
 //redirect
-const redirectUrl = "https://testonly.forevermecosmetics.ie/addOrder.php";
-const redirectAddress = "https://testonly.forevermecosmetics.ie/index.php?route=api/order/pp_Order&api_token=";
+const redirectUrl = "https://pauldowlingportfolio.com/opencart-3.0.3.1/upload/addOrder.php";
+const redirectAddress = "https://pauldowlingportfolio.com/opencart-3.0.3.1/upload/index.php?route=api/order/pp_Order&api_token=";
 // catagory request
-const categoryAddress = "https://testonly.forevermecosmetics.ie/index.php?route=product/category";
+const categoryAddress = "https://pauldowlingportfolio.com/opencart-3.0.3.1/upload/index.php?route=product/category";
 const categoryId = "59";
-const categoryCurl = "https://testonly.forevermecosmetics.ie/getCatagory.php";
+const categoryCurl = "https://pauldowlingportfolio.com/opencart-3.0.3.1/upload/getCatagory.php";
 //
-const shippingAddressAddress = "https://testonly.forevermecosmetics.ie/index.php?route=api/shipping/address&api_token=";
-const shippingAddressCurl = "https://testonly.forevermecosmetics.ie/AddNewShipAddress.php";
+const shippingAddressAddress = "https://pauldowlingportfolio.com/opencart-3.0.3.1/upload/index.php?route=api/shipping/address&api_token=";
+const shippingAddressCurl = "https://pauldowlingportfolio.com/opencart-3.0.3.1/upload/AddNewShipAddress.php";
 //
 let count = 0;
 const form = "false";
 const categoryObj = {api_token : undefined,
-fetchUrl: "https://testonly.forevermecosmetics.ie/getCatagory.php",
-package: {address: "https://testonly.forevermecosmetics.ie/index.php?route=product/category/apiCategory",
+fetchUrl: "https://pauldowlingportfolio.com/opencart-3.0.3.1/upload/getCatagory.php",
+package: {address: "https://pauldowlingportfolio.com/opencart-3.0.3.1/upload/index.php?route=product/category/apiCategory",
 searchQuery : {path: "59"}}
 
 };

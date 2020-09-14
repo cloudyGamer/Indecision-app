@@ -350,7 +350,7 @@ localState = (key,uni) => {
         if(tinyProp!=='value') {
         console.log("product:resources.name"+JSON.stringify(this.props.propObj.masterObj.stateStorage));     
         console.log("product: resources.name found");
-        productImage = "https://testonly.forevermecosmetics.ie/image/"+tinyProp.image;
+        productImage = "https://pauldowlingportfolio.com/opencart-3.0.3.1/upload/image/"+tinyProp.image;
         name = tinyProp.name;
         description = tinyProp.description;
         price = Math.round(tinyProp.price * 100) / 100;
@@ -419,10 +419,10 @@ localState = (key,uni) => {
                      <div className="midShelf_Basketcontainer" onClick={(e)=> master.delayBasket(e,tinyProp.product_id,master.basketHandler,master.fncAddToggle,this.localState,"basketClicked",this.state.quantity)}>
                      
                            <div className="midShelf_Basketicon">
-                              <img  src="assets/basket.png"></img>
+                              <img  src="https://pauldowlingportfolio.com/opencart-3.0.3.1/assets/basket.png"></img>
                            </div>
                            <div className="midShelf_Basketicon_clicked img_visible">
-                              <img  src="assets/basket_black.png"></img>
+                              <img  src="https://pauldowlingportfolio.com/opencart-3.0.3.1/assets/basket_black.png"></img>
                            </div>
                             <div  className={'midshelf_addToCart'}>  
                             Add To Cart
@@ -434,10 +434,10 @@ localState = (key,uni) => {
                      <div className="midShelf_Basketcontainer_clicked" onClick={(e)=>  master.delayBasket(e,tinyProp.product_id,master.removeItemWrapper,master.fncRemoveToggle,this.localState,"basketClicked",this.state.quantity)}>
                      
                            <div className="midShelf_Basketicon">
-                              <img  src="assets/basket_black.png"></img>
+                              <img  src="https://pauldowlingportfolio.com/opencart-3.0.3.1/assets/basket_black.png"></img>
                            </div>
                            <div className="midShelf_Basketicon_clicked img_invisible">
-                              <img  src="assets/basket_black.png"></img>
+                              <img  src="https://pauldowlingportfolio.com/opencart-3.0.3.1/assets/basket_black.png"></img>
                            </div>
                             <div   className={'midshelf_addToCart'}>  
                             Add To Cart
@@ -452,16 +452,16 @@ localState = (key,uni) => {
         <div className="bottomShelf_greyWrapper">
                      <div className="bottomShelf_socMedButton">
                           <div className="bottomShelf_socMedButton_but1">
-                          <img src="assets/fb_icon_3.png" className="bottomShelf_socMedButton_but1"></img>
+                          <img src="https://pauldowlingportfolio.com/opencart-3.0.3.1/assets/fb_icon_3.png" className="bottomShelf_socMedButton_but1"></img>
                           </div>
                      
                           <div className="bottomShelf_socMedButton_but1">
-                          <img src="assets/insta_icon_4.png"></img>
+                          <img src="https://pauldowlingportfolio.com/opencart-3.0.3.1/assets/insta_icon_4.png"></img>
                           </div>
                      
                           <div className="bottomShelf_socMedButton_but1">
             
-                          <img src="assets/twitter_icon_3.png"></img>
+                          <img src="https://pauldowlingportfolio.com/opencart-3.0.3.1/assets/twitter_icon_3.png"></img>
                           </div>
                      </div>
                      
@@ -486,7 +486,7 @@ localState = (key,uni) => {
                           <div className="titleHolder_title">
                           Ingredients
                           </div>
-                          <img src="assets/arrow-down-48.png" className="titleHolder_arrow">
+                          <img src="https://pauldowlingportfolio.com/opencart-3.0.3.1/assets/arrow-down-48.png" className="titleHolder_arrow">
                           
                           </img>
                     </div>
@@ -529,7 +529,7 @@ localState = (key,uni) => {
                           <div className="titleHolder_title">
                           Related Article
                           </div>
-                          <img src="assets/arrow-down-48.png" className="titleHolder_arrow">
+                          <img src="https://pauldowlingportfolio.com/opencart-3.0.3.1/assets/arrow-down-48.png" className="titleHolder_arrow">
                           
                           </img>
                      </div>
@@ -561,7 +561,7 @@ localState = (key,uni) => {
                              <div className="titleHolder_title">
                              Ingredients new 
                              </div>
-                             <img src="assets/arrow-down-48.png" className="titleHolder_arrow">
+                             <img src="https://pauldowlingportfolio.com/opencart-3.0.3.1/assets/arrow-down-48.png" className="titleHolder_arrow">
 
                              </img>
                        </div>
@@ -604,7 +604,7 @@ localState = (key,uni) => {
                                    <div className="titleHolder_title">
                                    Related Article
                                    </div>
-                                   <img src="assets/arrow-down-48.png" className="titleHolder_arrow">
+                                   <img src="https://pauldowlingportfolio.com/opencart-3.0.3.1/assets/arrow-down-48.png" className="titleHolder_arrow">
                                    </img>
                               </div>
 

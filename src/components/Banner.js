@@ -8,7 +8,7 @@ const Banner = (props) => (
 <div className="container">
     <div id="banner" className="banner">
     
-    <img className="banner_logo" src="assets/foreverMeLogo.png"/>
+    <img className="banner_logo" src="https://pauldowlingportfolio.com/opencart-3.0.3.1/assets/foreverMeLogo.png"/>
     
         </div>
       

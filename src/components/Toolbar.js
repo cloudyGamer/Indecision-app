@@ -120,14 +120,14 @@ export default class Toolbar extends React.Component {
     <div id="menuFavicon">
     
     </div>
-    <div id="socialMediabutton" className="Toolbar_info" onClick={()=> tinyProp.setStoreInfo("Toolbar")}><img src="assets/socialMedia.png" /></div>
+    <div id="socialMediabutton" className="Toolbar_info" onClick={()=> tinyProp.setStoreInfo("Toolbar")}><img src="https://pauldowlingportfolio.com/opencart-3.0.3.1/assets/socialMedia.png" /></div>
     <div className="Toolbar_basketContainer">
     {importedPromise!==undefined&& <div>{cartContents}</div>}
       <div className="Toolbar_emptyWrapper">
           <div className="Toolbar_mask"></div>
           <div id="emptyMessage" className="Toolbar_empty">Empty</div>
           <div className="Toolbar_basket" id="basketButton" onClick={() => this.basketClickHandler(importedPromise)}>
-               <img src="assets/basket.png" />
+               <img src="https://pauldowlingportfolio.com/opencart-3.0.3.1/assets/basket.png" />
           </div>
       </div>
 
