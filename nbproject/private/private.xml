@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project-private xmlns="http://www.netbeans.org/ns/project-private/1">
-    <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="122">
+    <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="132">
         <file>
             <url>src/components/ChildState.js</url>
             <bookmark id="48">
@@ -103,29 +103,14 @@
         </file>
         <file>
             <url>src/components/IndecisionApp.js</url>
-            <bookmark id="68">
+            <bookmark id="127">
                 <name/>
-                <line>85</line>
+                <line>667</line>
                 <key/>
             </bookmark>
-            <bookmark id="80">
+            <bookmark id="128">
                 <name/>
-                <line>452</line>
-                <key/>
-            </bookmark>
-            <bookmark id="122">
-                <name/>
-                <line>489</line>
-                <key/>
-            </bookmark>
-            <bookmark id="102">
-                <name/>
-                <line>494</line>
-                <key/>
-            </bookmark>
-            <bookmark id="83">
-                <name/>
-                <line>815</line>
+                <line>1482</line>
                 <key/>
             </bookmark>
         </file>
@@ -172,9 +157,24 @@
         </file>
         <file>
             <url>src/components/HomePage.js</url>
+            <bookmark id="123">
+                <name/>
+                <line>86</line>
+                <key/>
+            </bookmark>
             <bookmark id="45">
                 <name/>
                 <line>458</line>
+                <key/>
+            </bookmark>
+            <bookmark id="125">
+                <name/>
+                <line>832</line>
+                <key/>
+            </bookmark>
+            <bookmark id="124">
+                <name/>
+                <line>851</line>
                 <key/>
             </bookmark>
             <bookmark id="36">
@@ -183,10 +183,31 @@
                 <key/>
             </bookmark>
         </file>
+        <file>
+            <url>src/components/PaymentProcess.js</url>
+            <bookmark id="132">
+                <name/>
+                <line>401</line>
+                <key/>
+            </bookmark>
+            <bookmark id="129">
+                <name/>
+                <line>1180</line>
+                <key/>
+            </bookmark>
+            <bookmark id="130">
+                <name/>
+                <line>1450</line>
+                <key/>
+            </bookmark>
+        </file>
     </editor-bookmarks>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/Users/pol/Documents/react-course-projects/Forever-Me/src/components/BasketProduct.js</file>
+            <file>file:/Users/pol/Documents/react-course-projects/live-build/Forever-Me/src/components/FeaturedProduct.js</file>
+            <file>file:/Users/pol/Documents/react-course-projects/live-build/Forever-Me/src/components/IndecisionApp.js</file>
+            <file>file:/Users/pol/Documents/react-course-projects/live-build/Forever-Me/src/components/HomePage.js</file>
+            <file>file:/Users/pol/Documents/react-course-projects/live-build/Forever-Me/src/components/PaymentProcess.js</file>
         </group>
     </open-files>
 </project-private>

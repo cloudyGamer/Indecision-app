@@ -1495,8 +1495,8 @@ window.open(url);
      return  window.fetch(`https://pauldowlingportfolio.com/opencart-3.0.3.1/upload/index.php?route=` + data, {
 
        mode: 'cors',
-       method: 'GET', // or 'PUT' 
-       headers: headers
+       method: 'GET'//, // or 'PUT' 
+       //headers: headers
      }).then(response => response.json())
 
      .then(json =>

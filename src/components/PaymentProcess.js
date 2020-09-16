@@ -407,7 +407,7 @@ const methodHeader = new Headers({
 "Access-Control-Request-Headers" : "Content-Type"
 });
 let url = address + api_token;
-//console.log("APIGenericPost url=  "+url);
+console.log("APIGenericPost url=  "+url);
 const method = "POST";
 let body;
 body = new FormData(this.form);
@@ -418,7 +418,7 @@ const headers = {
 };
 ///////////
 if (obj !== undefined){
-//console.log("APIGenericPost if blue not undefined  "+obj);
+console.log("APIGenericPost if blue not undefined  "+obj);
 //const body = new FormData();
 
 
@@ -440,7 +440,7 @@ console.log("entry apiGenericPost " + pair[0] + ',' + pair[1]);
 
 return fetch(fetchUrl, { method: "POST", body })
 .then(res => res.json())
-.then(data => console.log(JSON.stringify(data), null, "\t"));
+.then(data => console.log("blue returned data"+JSON.stringify(data), null, "\t"));
 }
 ///////////
 //https://pauldowlingportfolio.com/opencart-3.0.3.1/upload/index.php?route=/api/shipping/methods&api_token=bee6b1b9f22fd417ede11a687c
@@ -462,10 +462,13 @@ return fetch(fetchUrl2, {method, body})
 .then(data =>
 this.setState({pp_standard : data},
 function () {
-console.log("redirectSave - setState defined:  " + this.state.pp_standard.redirect_url); }))
+console.log("APIGenericPostRedirect -redirectSave - setState defined:' +  this.state.pp_standard.redirect_url"); }))
 .then(res => this.setState((state) => {
-console.log("redirectSave - setState defined:  " + state.pp_standard.redirect_url);
-window.open(state.pp_standard.redirect_url); }));
+console.log("APIGenericPostRedirect -redirectSave - setState defined:  ' state.pp_standard.redirect_url");
+
+//window.open(state.pp_standard.redirect_url);
+window.open('https://pauldowlingportfolio.com/opencart-3.0.3.1/upload/upload_products/newestbody.html');
+}));
 }
 //
 )
@@ -1047,6 +1050,7 @@ return fetch(obj.fetchUrl, { method: "POST", body })
 }
 //////////////////////////////////////// redirect function
 redirect = (api_token, address, fetchUrl, obj = undefined) => {
+console.log("Redirect executed");
 const methodRequest = "OPTIONS";
 const methodHeader = new Headers({
 // "Content-Type": "application/json",
@@ -1212,7 +1216,7 @@ console.log("no personal details");
 this.firstname = ''}
 //
       const tinyProp = this.props.propObj.masterObj;
-      console.log("eyes here"+Object.keys(tinyProp));
+      //console.log("eyes here"+Object.keys(tinyProp));
       const basketParameter = tinyProp.callState();
       const api_token = basketParameter.promise.api_token;
 //console.log(uniqueMessage+"api token"+api_token);      

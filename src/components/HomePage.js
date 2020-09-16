@@ -832,7 +832,7 @@ componentLoader = () => {
      
 featuredProduct =  async (data ,uniqueMessage,keyName) => {
 //////////////////////////
- console.log("featuredProduct executed with parameter" + data + "from within" + uniqueMessage);
+ console.log("*featuredProduct executed with parameter" + data + "from within" + uniqueMessage);
  const body = new FormData();
  let headers = new Headers();
 headers.append('Content-Type', 'application/json');
@@ -842,14 +842,14 @@ headers.append('Origin','*');
  const encoded = btoa('6725a4fb40bf84a8a9354b7609324830:6725a4fb40bf84a8a9354b7609324830');
  const resolvedPromise = await window.fetch(data, {
       mode: 'cors',
-      method: 'GET', // or 'PUT' 
-      headers: headers
+      method: 'GET' // or 'PUT' 
+      //headers: headers
  });
  const resJson = await resolvedPromise.json();
  const returnedJson = await resJson;
  //console.log(uniqueMessage+"featuredProduct"+JSON.stringify(returnedJson));
  const featuredProductObj = {[keyName]:returnedJson};
- //console.log(uniqueMessage+"featuredProductObj"+JSON.stringify(featuredProductObj));
+ console.log(uniqueMessage+"featuredProductObj"+JSON.stringify(featuredProductObj));
  return {[keyName]:returnedJson};  
    /*.then(function(json){ return {keyName:json}
       console.log("json returned");
