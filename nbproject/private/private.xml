@@ -38,6 +38,29 @@
             </bookmark>
         </file>
         <file>
+            <url>src/components/FeaturedProduct.js</url>
+            <bookmark id="72">
+                <name/>
+                <line>35</line>
+                <key/>
+            </bookmark>
+            <bookmark id="71">
+                <name/>
+                <line>62</line>
+                <key/>
+            </bookmark>
+            <bookmark id="70">
+                <name/>
+                <line>62</line>
+                <key/>
+            </bookmark>
+            <bookmark id="87">
+                <name/>
+                <line>91</line>
+                <key/>
+            </bookmark>
+        </file>
+        <file>
             <url>src/styles/components/_product.scss</url>
             <bookmark id="113">
                 <name/>
@@ -67,29 +90,6 @@
             <bookmark id="114">
                 <name/>
                 <line>826</line>
-                <key/>
-            </bookmark>
-        </file>
-        <file>
-            <url>src/components/FeaturedProduct.js</url>
-            <bookmark id="72">
-                <name/>
-                <line>35</line>
-                <key/>
-            </bookmark>
-            <bookmark id="71">
-                <name/>
-                <line>62</line>
-                <key/>
-            </bookmark>
-            <bookmark id="70">
-                <name/>
-                <line>62</line>
-                <key/>
-            </bookmark>
-            <bookmark id="87">
-                <name/>
-                <line>91</line>
                 <key/>
             </bookmark>
         </file>
@@ -192,12 +192,12 @@
             </bookmark>
             <bookmark id="129">
                 <name/>
-                <line>1180</line>
+                <line>1183</line>
                 <key/>
             </bookmark>
             <bookmark id="130">
                 <name/>
-                <line>1450</line>
+                <line>1453</line>
                 <key/>
             </bookmark>
         </file>
@@ -206,7 +206,6 @@
         <group>
             <file>file:/Users/pol/Documents/react-course-projects/live-build/Forever-Me/src/components/FeaturedProduct.js</file>
             <file>file:/Users/pol/Documents/react-course-projects/live-build/Forever-Me/src/components/IndecisionApp.js</file>
-            <file>file:/Users/pol/Documents/react-course-projects/live-build/Forever-Me/src/components/HomePage.js</file>
             <file>file:/Users/pol/Documents/react-course-projects/live-build/Forever-Me/src/components/PaymentProcess.js</file>
         </group>
     </open-files>
