@@ -52,7 +52,7 @@ address_2Bill1: 'bray',
 cityBill1: 'City',
 postcodeBill1: 'd8'
 }*/
-
+//minor change to initiate name change
 //old state
 state = {
 pp_standard : '',
