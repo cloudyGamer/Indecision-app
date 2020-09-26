@@ -32,7 +32,7 @@
     "live-server": "^1.2.1",
     "loader": "^2.1.1",
     "makecancelable": "^1.1.1",
-    "node-sass": "4.5.3",
+    "node-sass": "4.13.1",
     "normalize.css": "7.0.0",
     "object-to-formdata": "^1.6.4",
     "react": "^16.4.0",
